@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Auction.BL.Services
 {
-    interface IAuctioneerService
+    public interface IAuctioneerService
     {
         AuctioneerModel RegisterAuctioneer(AuctioneerModel auctioneerModel);
         bool LoginAuctioneer(AuctioneerModel auctioneerModel);

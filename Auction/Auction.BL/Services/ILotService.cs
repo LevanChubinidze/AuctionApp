@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Auction.BL.Services
 {
-    interface ILotService
+    public interface ILotService
     {
         IEnumerable<LotModel> GetLots();
         IEnumerable<LotModel> GetLotByDate(DateTime start, DateTime end);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Auction.BL.Models
 {
-    class TradingHistoryModel
+    public class TradingHistoryModel
     {
         public int Id { get; set; }
         public LotModel Lot { get; set; }

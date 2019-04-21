@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Auction.BL.Models
 {
-    class LotModel
+    public class LotModel
     {
         public int ID { get; set; }
         public string Name { get; set; }

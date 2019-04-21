@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Auction.BL.Services
 {
-    interface ITraderService
+    public interface ITraderService
     {
         IEnumerable<TraderModel> GetTraders();
         IEnumerable<TraderModel> GetTradersByDate(DateTime start, DateTime end);

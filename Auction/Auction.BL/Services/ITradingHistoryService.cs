@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Auction.BL.Services
 {
-    interface ITradingHistoryService
+    public interface ITradingHistoryService
     {
         IEnumerable<TradingHistoryModel> GetTradingHistory();
         IEnumerable<TradingHistoryModel> GetTradingHistoryByLotId(int id);

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Auction.BL.Models
 {
-    class AuctioneerModel
+    public class AuctioneerModel
     {
         public int Id { get; set; }
         public string  FirstName { get; set; }
         public string LastName { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        public enum Status { }
+        public enum Status {AdminUser, User }
     }
 }
