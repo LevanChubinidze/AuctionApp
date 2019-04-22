@@ -34,7 +34,7 @@ namespace User
                     UserName = UserName_textBox.Text,
                     Password = Password_textBox.Text,
                 };
-
+                
             }
         }
 
@@ -45,5 +45,6 @@ namespace User
                 Utils.ValidateInput(text, label);
             }
         }
+
     }
 }

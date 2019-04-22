@@ -52,7 +52,7 @@
             // UserName_textBox
             // 
             this.UserName_textBox.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserName_textBox.ForeColor = System.Drawing.Color.Blue;
+            this.UserName_textBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.UserName_textBox.Location = new System.Drawing.Point(242, 218);
             this.UserName_textBox.Name = "UserName_textBox";
             this.UserName_textBox.Size = new System.Drawing.Size(300, 29);
@@ -66,15 +66,15 @@
             this.UserName_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(130)))));
             this.UserName_label.Location = new System.Drawing.Point(241, 193);
             this.UserName_label.Name = "UserName_label";
-            this.UserName_label.Size = new System.Drawing.Size(96, 23);
+            this.UserName_label.Size = new System.Drawing.Size(140, 23);
             this.UserName_label.TabIndex = 2;
-            this.UserName_label.Text = "Username";
+            this.UserName_label.Text = "მომხმარებელი";
             this.UserName_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Password_textBox
             // 
             this.Password_textBox.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password_textBox.ForeColor = System.Drawing.Color.Blue;
+            this.Password_textBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.Password_textBox.Location = new System.Drawing.Point(242, 281);
             this.Password_textBox.Name = "Password_textBox";
             this.Password_textBox.Size = new System.Drawing.Size(300, 29);
@@ -89,23 +89,24 @@
             this.Password_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(130)))));
             this.Password_label.Location = new System.Drawing.Point(241, 256);
             this.Password_label.Name = "Password_label";
-            this.Password_label.Size = new System.Drawing.Size(91, 23);
+            this.Password_label.Size = new System.Drawing.Size(81, 23);
             this.Password_label.TabIndex = 2;
-            this.Password_label.Text = "Password";
+            this.Password_label.Text = "პაროლი";
             this.Password_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LogIn_button
             // 
-            this.LogIn_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(130)))));
+            this.LogIn_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.LogIn_button.FlatAppearance.BorderSize = 0;
+            this.LogIn_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(250)))));
             this.LogIn_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LogIn_button.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogIn_button.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogIn_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LogIn_button.Location = new System.Drawing.Point(242, 339);
+            this.LogIn_button.Location = new System.Drawing.Point(242, 341);
             this.LogIn_button.Name = "LogIn_button";
             this.LogIn_button.Size = new System.Drawing.Size(300, 30);
             this.LogIn_button.TabIndex = 3;
-            this.LogIn_button.Text = "Sign in";
+            this.LogIn_button.Text = "სისტემაში შესვლა";
             this.LogIn_button.UseVisualStyleBackColor = false;
             this.LogIn_button.Click += new System.EventHandler(this.LogIn_button_Click);
             // 
@@ -114,11 +115,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(239, 157);
+            this.label1.Location = new System.Drawing.Point(223, 157);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(307, 23);
+            this.label1.Size = new System.Drawing.Size(338, 23);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Username or Password is Incorrect";
+            this.label1.Text = "მომხმარებელი ან პაროლი არასწორია";
             this.label1.Visible = false;
             // 
             // LogInForm
@@ -133,6 +134,8 @@
             this.Controls.Add(this.UserName_label);
             this.Controls.Add(this.Password_textBox);
             this.Controls.Add(this.UserName_textBox);
+            this.MaximumSize = new System.Drawing.Size(800, 600);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "LogInForm";
             this.Text = "LogIn";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

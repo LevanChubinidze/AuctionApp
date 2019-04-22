@@ -19,7 +19,7 @@ namespace User.Common
             }
             else
             {
-                label.ForeColor = Color.Blue;
+                label.ForeColor = Color.DarkBlue;
                 return true;
             }
         }

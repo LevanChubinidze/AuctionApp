@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Auction.BL.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace User
+namespace User.Forms
 {
-    public partial class UserForm : Form
+    public partial class MainForm : Form
     {
-        public UserForm()
+        public MainForm(AuctioneerModel auctioneerModel)
         {
             InitializeComponent();
+
         }
     }
 }
