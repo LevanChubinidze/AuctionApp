@@ -12,6 +12,7 @@ namespace Auction.BL.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Quantity { get; set; }
+        public string Unit { get; set; }
         public decimal StartingPrice { get; set; }
         public decimal CurrentPrice { get; set; }
         public decimal MinimalBid { get; set; }
