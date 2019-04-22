@@ -16,6 +16,7 @@ namespace Auction.BL.Models
         public string ParticipantName { get; set; }
         public string ParticipantStatus { get; set; }
         public string PhoneNumber { get; set; }
+        public string Email { get; set; }
         public string BankName { get; set; }
         public string BankAccountNumber { get; set; }
         public string Swift { get; set; }
