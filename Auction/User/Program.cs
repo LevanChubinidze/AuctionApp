@@ -18,7 +18,7 @@ namespace User
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm(AuctioneerModel));
+            Application.Run(new LogInForm());
         }
     }
 }
