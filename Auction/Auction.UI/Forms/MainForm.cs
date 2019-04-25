@@ -13,7 +13,7 @@ namespace User.Forms
 {
     public partial class MainForm : Form
     {
-        public MainForm(AuctioneerModel auctioneerModel)
+        public MainForm()
         {
             InitializeComponent();
 

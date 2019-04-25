@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Auction.BL.Models
 {
+   
+
     public class AuctioneerModel
     {
         public int Id { get; set; }
@@ -13,6 +15,6 @@ namespace Auction.BL.Models
         public string LastName { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        public enum Status {AdminUser, User }
+        public bool IsAdmin { get; set; }
     }
 }

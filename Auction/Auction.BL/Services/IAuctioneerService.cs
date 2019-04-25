@@ -10,6 +10,6 @@ namespace Auction.BL.Services
     public interface IAuctioneerService
     {
         AuctioneerModel RegisterAuctioneer(AuctioneerModel auctioneerModel);
-        bool LoginAuctioneer(AuctioneerModel auctioneerModel);
+        AuctioneerModel LoginAuctioneer(AuctioneerModel auctioneerModel);
     }
 }
