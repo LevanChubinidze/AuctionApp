@@ -37,6 +37,7 @@
             this.User_pictureBox = new System.Windows.Forms.PictureBox();
             this.Content_panel = new System.Windows.Forms.Panel();
             this.MenuPanel_timer = new System.Windows.Forms.Timer(this.components);
+            this.Registration_LotModel_button = new System.Windows.Forms.Button();
             Menu_button = new System.Windows.Forms.Button();
             this.Menu_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.User_pictureBox)).BeginInit();
@@ -60,6 +61,7 @@
             // Menu_panel
             // 
             this.Menu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.Menu_panel.Controls.Add(this.Registration_LotModel_button);
             this.Menu_panel.Controls.Add(Menu_button);
             this.Menu_panel.Controls.Add(this.LastName_label);
             this.Menu_panel.Controls.Add(this.FirstName_label);
@@ -117,6 +119,24 @@
             this.MenuPanel_timer.Interval = 10;
             this.MenuPanel_timer.Tick += new System.EventHandler(this.MenuPanel_timer_Tick);
             // 
+            // Registration_LotModel_button
+            // 
+            this.Registration_LotModel_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.Registration_LotModel_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Registration_LotModel_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Registration_LotModel_button.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Registration_LotModel_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Registration_LotModel_button.Image = ((System.Drawing.Image)(resources.GetObject("Registration_LotModel_button.Image")));
+            this.Registration_LotModel_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Registration_LotModel_button.Location = new System.Drawing.Point(0, 270);
+            this.Registration_LotModel_button.Name = "Registration_LotModel_button";
+            this.Registration_LotModel_button.Size = new System.Drawing.Size(220, 50);
+            this.Registration_LotModel_button.TabIndex = 3;
+            this.Registration_LotModel_button.Tag = "";
+            this.Registration_LotModel_button.Text = "    Auction";
+            this.Registration_LotModel_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Registration_LotModel_button.UseVisualStyleBackColor = false;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -142,5 +162,6 @@
         private System.Windows.Forms.Label FirstName_label;
         private System.Windows.Forms.Panel Content_panel;
         private System.Windows.Forms.Timer MenuPanel_timer;
+        private System.Windows.Forms.Button Registration_LotModel_button;
     }
 }
