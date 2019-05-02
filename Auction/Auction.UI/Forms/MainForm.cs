@@ -15,7 +15,7 @@ namespace User.Forms
     {
         bool Lessed = false;
         int MaxWidth = 220;
-        int MinWidth = 50;
+        int MinWidth = 65;
         int StepSize = 5;
 
         public MainForm(AuctioneerModel auctioneer)

@@ -32,12 +32,14 @@
             System.Windows.Forms.Button Menu_button;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.Menu_panel = new System.Windows.Forms.Panel();
+            this.Auction_button = new System.Windows.Forms.Button();
             this.LastName_label = new System.Windows.Forms.Label();
             this.FirstName_label = new System.Windows.Forms.Label();
             this.User_pictureBox = new System.Windows.Forms.PictureBox();
             this.Content_panel = new System.Windows.Forms.Panel();
             this.MenuPanel_timer = new System.Windows.Forms.Timer(this.components);
-            this.Registration_LotModel_button = new System.Windows.Forms.Button();
+            this.Trader_button = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             Menu_button = new System.Windows.Forms.Button();
             this.Menu_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.User_pictureBox)).BeginInit();
@@ -51,9 +53,9 @@
             Menu_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             Menu_button.FlatAppearance.BorderSize = 0;
             Menu_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            Menu_button.Location = new System.Drawing.Point(177, 12);
+            Menu_button.Location = new System.Drawing.Point(165, 4);
             Menu_button.Name = "Menu_button";
-            Menu_button.Size = new System.Drawing.Size(35, 35);
+            Menu_button.Size = new System.Drawing.Size(45, 45);
             Menu_button.TabIndex = 2;
             Menu_button.UseVisualStyleBackColor = false;
             Menu_button.Click += new System.EventHandler(this.Menu_button_Click);
@@ -61,7 +63,9 @@
             // Menu_panel
             // 
             this.Menu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.Menu_panel.Controls.Add(this.Registration_LotModel_button);
+            this.Menu_panel.Controls.Add(this.button1);
+            this.Menu_panel.Controls.Add(this.Trader_button);
+            this.Menu_panel.Controls.Add(this.Auction_button);
             this.Menu_panel.Controls.Add(Menu_button);
             this.Menu_panel.Controls.Add(this.LastName_label);
             this.Menu_panel.Controls.Add(this.FirstName_label);
@@ -69,17 +73,35 @@
             this.Menu_panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.Menu_panel.Location = new System.Drawing.Point(0, 0);
             this.Menu_panel.MaximumSize = new System.Drawing.Size(220, 0);
-            this.Menu_panel.MinimumSize = new System.Drawing.Size(50, 0);
+            this.Menu_panel.MinimumSize = new System.Drawing.Size(65, 0);
             this.Menu_panel.Name = "Menu_panel";
             this.Menu_panel.Size = new System.Drawing.Size(220, 623);
             this.Menu_panel.TabIndex = 0;
+            // 
+            // Auction_button
+            // 
+            this.Auction_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.Auction_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Auction_button.FlatAppearance.BorderSize = 0;
+            this.Auction_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Auction_button.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Auction_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Auction_button.Image = ((System.Drawing.Image)(resources.GetObject("Auction_button.Image")));
+            this.Auction_button.Location = new System.Drawing.Point(0, 275);
+            this.Auction_button.Name = "Auction_button";
+            this.Auction_button.Size = new System.Drawing.Size(220, 50);
+            this.Auction_button.TabIndex = 1;
+            this.Auction_button.Tag = "";
+            this.Auction_button.Text = "    აუქციონი";
+            this.Auction_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Auction_button.UseVisualStyleBackColor = false;
             // 
             // LastName_label
             // 
             this.LastName_label.AutoSize = true;
             this.LastName_label.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastName_label.ForeColor = System.Drawing.Color.White;
-            this.LastName_label.Location = new System.Drawing.Point(81, 192);
+            this.LastName_label.Location = new System.Drawing.Point(81, 202);
             this.LastName_label.Name = "LastName_label";
             this.LastName_label.Size = new System.Drawing.Size(58, 23);
             this.LastName_label.TabIndex = 1;
@@ -90,7 +112,7 @@
             this.FirstName_label.AutoSize = true;
             this.FirstName_label.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FirstName_label.ForeColor = System.Drawing.Color.White;
-            this.FirstName_label.Location = new System.Drawing.Point(81, 165);
+            this.FirstName_label.Location = new System.Drawing.Point(81, 175);
             this.FirstName_label.Name = "FirstName_label";
             this.FirstName_label.Size = new System.Drawing.Size(58, 23);
             this.FirstName_label.TabIndex = 1;
@@ -99,7 +121,7 @@
             // User_pictureBox
             // 
             this.User_pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("User_pictureBox.Image")));
-            this.User_pictureBox.Location = new System.Drawing.Point(62, 43);
+            this.User_pictureBox.Location = new System.Drawing.Point(62, 48);
             this.User_pictureBox.Name = "User_pictureBox";
             this.User_pictureBox.Size = new System.Drawing.Size(96, 96);
             this.User_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -119,23 +141,40 @@
             this.MenuPanel_timer.Interval = 10;
             this.MenuPanel_timer.Tick += new System.EventHandler(this.MenuPanel_timer_Tick);
             // 
-            // Registration_LotModel_button
+            // Trader_button
             // 
-            this.Registration_LotModel_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.Registration_LotModel_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Registration_LotModel_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Registration_LotModel_button.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Registration_LotModel_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Registration_LotModel_button.Image = ((System.Drawing.Image)(resources.GetObject("Registration_LotModel_button.Image")));
-            this.Registration_LotModel_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Registration_LotModel_button.Location = new System.Drawing.Point(0, 270);
-            this.Registration_LotModel_button.Name = "Registration_LotModel_button";
-            this.Registration_LotModel_button.Size = new System.Drawing.Size(220, 50);
-            this.Registration_LotModel_button.TabIndex = 3;
-            this.Registration_LotModel_button.Tag = "";
-            this.Registration_LotModel_button.Text = "    Auction";
-            this.Registration_LotModel_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Registration_LotModel_button.UseVisualStyleBackColor = false;
+            this.Trader_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.Trader_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Trader_button.FlatAppearance.BorderSize = 0;
+            this.Trader_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Trader_button.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Trader_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Trader_button.Image = ((System.Drawing.Image)(resources.GetObject("Trader_button.Image")));
+            this.Trader_button.Location = new System.Drawing.Point(0, 338);
+            this.Trader_button.Name = "Trader_button";
+            this.Trader_button.Size = new System.Drawing.Size(220, 50);
+            this.Trader_button.TabIndex = 2;
+            this.Trader_button.Tag = "";
+            this.Trader_button.Text = "    მონაწილე";
+            this.Trader_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Trader_button.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(0, 401);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 50);
+            this.button1.TabIndex = 3;
+            this.button1.Tag = "";
+            this.button1.Text = "    აუქციონი";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
@@ -162,6 +201,8 @@
         private System.Windows.Forms.Label FirstName_label;
         private System.Windows.Forms.Panel Content_panel;
         private System.Windows.Forms.Timer MenuPanel_timer;
-        private System.Windows.Forms.Button Registration_LotModel_button;
+        private System.Windows.Forms.Button Auction_button;
+        private System.Windows.Forms.Button Trader_button;
+        private System.Windows.Forms.Button button1;
     }
 }
