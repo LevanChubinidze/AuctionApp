@@ -1,4 +1,5 @@
 ﻿using Auction.BL.Models;
+using Auction.UI.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,6 +28,7 @@ namespace User.Forms
             CenterLabel(FirstName_label);
             CenterLabel(LastName_label);
 
+            Admin_Button.Visible = auctioneer.IsAdmin;
         }
 
         private void CenterLabel(Label label)
@@ -42,7 +44,7 @@ namespace User.Forms
             User_pictureBox.Visible = visible;
         }
 
-        private void Menu_button_Click(object sender, EventArgs e)
+        private void Hamburger_button_Click(object sender, EventArgs e)
         {
             MenuPanel_timer.Start();
         }
@@ -83,5 +85,16 @@ namespace User.Forms
             }
         }
 
+        private void MenuButton_Click(object sender, EventArgs e)
+        {
+            // ToDo: სატესტოა და გასასწორებელი გაქვს!
+            LoadContentMenu(new AdminControl());
+        }
+
+        private void LoadContentMenu(UserControl userControl)
+        {
+            Content_panel.Controls.Clear();
+            Content_panel.Controls.Add(userControl);
+        }
     }
 }

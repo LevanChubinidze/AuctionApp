@@ -11,5 +11,7 @@ namespace Auction.BL.Services
     {
         AuctioneerModel RegisterAuctioneer(AuctioneerModel auctioneerModel);
         AuctioneerModel LoginAuctioneer(AuctioneerModel auctioneerModel);
+        IEnumerable<AuctioneerModel> GetAuctioneers();
+        AuctioneerModel EditAuctioneer(AuctioneerModel auctioneerModel);
     }
 }

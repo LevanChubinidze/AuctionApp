@@ -32,14 +32,14 @@
             System.Windows.Forms.Button Menu_button;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.Menu_panel = new System.Windows.Forms.Panel();
+            this.Admin_Button = new System.Windows.Forms.Button();
+            this.Trader_button = new System.Windows.Forms.Button();
             this.Auction_button = new System.Windows.Forms.Button();
             this.LastName_label = new System.Windows.Forms.Label();
             this.FirstName_label = new System.Windows.Forms.Label();
             this.User_pictureBox = new System.Windows.Forms.PictureBox();
             this.Content_panel = new System.Windows.Forms.Panel();
             this.MenuPanel_timer = new System.Windows.Forms.Timer(this.components);
-            this.Trader_button = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             Menu_button = new System.Windows.Forms.Button();
             this.Menu_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.User_pictureBox)).BeginInit();
@@ -58,12 +58,12 @@
             Menu_button.Size = new System.Drawing.Size(45, 45);
             Menu_button.TabIndex = 2;
             Menu_button.UseVisualStyleBackColor = false;
-            Menu_button.Click += new System.EventHandler(this.Menu_button_Click);
+            Menu_button.Click += new System.EventHandler(this.Hamburger_button_Click);
             // 
             // Menu_panel
             // 
             this.Menu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.Menu_panel.Controls.Add(this.button1);
+            this.Menu_panel.Controls.Add(this.Admin_Button);
             this.Menu_panel.Controls.Add(this.Trader_button);
             this.Menu_panel.Controls.Add(this.Auction_button);
             this.Menu_panel.Controls.Add(Menu_button);
@@ -78,43 +78,91 @@
             this.Menu_panel.Size = new System.Drawing.Size(220, 623);
             this.Menu_panel.TabIndex = 0;
             // 
+            // Admin_Button
+            // 
+            this.Admin_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.Admin_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Admin_Button.FlatAppearance.BorderSize = 0;
+            this.Admin_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Admin_Button.Font = new System.Drawing.Font("BPG Nino Mtavruli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Admin_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Admin_Button.Image = ((System.Drawing.Image)(resources.GetObject("Admin_Button.Image")));
+            this.Admin_Button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Admin_Button.Location = new System.Drawing.Point(0, 401);
+            this.Admin_Button.Name = "Admin_Button";
+            this.Admin_Button.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Admin_Button.Size = new System.Drawing.Size(220, 50);
+            this.Admin_Button.TabIndex = 3;
+            this.Admin_Button.Tag = "";
+            this.Admin_Button.Text = "    ადმინი";
+            this.Admin_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Admin_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Admin_Button.UseVisualStyleBackColor = false;
+            this.Admin_Button.Click += new System.EventHandler(this.MenuButton_Click);
+            // 
+            // Trader_button
+            // 
+            this.Trader_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.Trader_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Trader_button.FlatAppearance.BorderSize = 0;
+            this.Trader_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Trader_button.Font = new System.Drawing.Font("BPG Nino Mtavruli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Trader_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Trader_button.Image = ((System.Drawing.Image)(resources.GetObject("Trader_button.Image")));
+            this.Trader_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Trader_button.Location = new System.Drawing.Point(0, 338);
+            this.Trader_button.Name = "Trader_button";
+            this.Trader_button.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Trader_button.Size = new System.Drawing.Size(220, 50);
+            this.Trader_button.TabIndex = 2;
+            this.Trader_button.Tag = "";
+            this.Trader_button.Text = "    მონაწილე";
+            this.Trader_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Trader_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Trader_button.UseVisualStyleBackColor = false;
+            this.Trader_button.Click += new System.EventHandler(this.MenuButton_Click);
+            // 
             // Auction_button
             // 
             this.Auction_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.Auction_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Auction_button.FlatAppearance.BorderSize = 0;
             this.Auction_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Auction_button.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Auction_button.Font = new System.Drawing.Font("BPG Nino Mtavruli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Auction_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Auction_button.Image = ((System.Drawing.Image)(resources.GetObject("Auction_button.Image")));
+            this.Auction_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Auction_button.Location = new System.Drawing.Point(0, 275);
             this.Auction_button.Name = "Auction_button";
+            this.Auction_button.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Auction_button.Size = new System.Drawing.Size(220, 50);
             this.Auction_button.TabIndex = 1;
             this.Auction_button.Tag = "";
             this.Auction_button.Text = "    აუქციონი";
+            this.Auction_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Auction_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Auction_button.UseVisualStyleBackColor = false;
+            this.Auction_button.Click += new System.EventHandler(this.MenuButton_Click);
             // 
             // LastName_label
             // 
             this.LastName_label.AutoSize = true;
-            this.LastName_label.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastName_label.Font = new System.Drawing.Font("BPG Nino Mtavruli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastName_label.ForeColor = System.Drawing.Color.White;
             this.LastName_label.Location = new System.Drawing.Point(81, 202);
             this.LastName_label.Name = "LastName_label";
-            this.LastName_label.Size = new System.Drawing.Size(58, 23);
+            this.LastName_label.Size = new System.Drawing.Size(49, 22);
             this.LastName_label.TabIndex = 1;
             this.LastName_label.Text = "label1";
             // 
             // FirstName_label
             // 
             this.FirstName_label.AutoSize = true;
-            this.FirstName_label.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FirstName_label.Font = new System.Drawing.Font("BPG Nino Mtavruli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FirstName_label.ForeColor = System.Drawing.Color.White;
             this.FirstName_label.Location = new System.Drawing.Point(81, 175);
             this.FirstName_label.Name = "FirstName_label";
-            this.FirstName_label.Size = new System.Drawing.Size(58, 23);
+            this.FirstName_label.Size = new System.Drawing.Size(49, 22);
             this.FirstName_label.TabIndex = 1;
             this.FirstName_label.Text = "label1";
             // 
@@ -133,7 +181,7 @@
             this.Content_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Content_panel.Location = new System.Drawing.Point(220, 0);
             this.Content_panel.Name = "Content_panel";
-            this.Content_panel.Size = new System.Drawing.Size(664, 623);
+            this.Content_panel.Size = new System.Drawing.Size(900, 623);
             this.Content_panel.TabIndex = 1;
             // 
             // MenuPanel_timer
@@ -141,45 +189,10 @@
             this.MenuPanel_timer.Interval = 10;
             this.MenuPanel_timer.Tick += new System.EventHandler(this.MenuPanel_timer_Tick);
             // 
-            // Trader_button
-            // 
-            this.Trader_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.Trader_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Trader_button.FlatAppearance.BorderSize = 0;
-            this.Trader_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Trader_button.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Trader_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Trader_button.Image = ((System.Drawing.Image)(resources.GetObject("Trader_button.Image")));
-            this.Trader_button.Location = new System.Drawing.Point(0, 338);
-            this.Trader_button.Name = "Trader_button";
-            this.Trader_button.Size = new System.Drawing.Size(220, 50);
-            this.Trader_button.TabIndex = 2;
-            this.Trader_button.Tag = "";
-            this.Trader_button.Text = "    მონაწილე";
-            this.Trader_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Trader_button.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(0, 401);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 50);
-            this.button1.TabIndex = 3;
-            this.button1.Tag = "";
-            this.button1.Text = "    აუქციონი";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(884, 623);
+            this.ClientSize = new System.Drawing.Size(1120, 623);
             this.Controls.Add(this.Content_panel);
             this.Controls.Add(this.Menu_panel);
             this.MinimumSize = new System.Drawing.Size(800, 600);
@@ -203,6 +216,6 @@
         private System.Windows.Forms.Timer MenuPanel_timer;
         private System.Windows.Forms.Button Auction_button;
         private System.Windows.Forms.Button Trader_button;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Admin_Button;
     }
 }
