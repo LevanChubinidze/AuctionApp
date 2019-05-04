@@ -19,6 +19,8 @@ namespace User.Forms
         int MinWidth = 65;
         int StepSize = 5;
 
+        Dictionary<Button, UserControl> MenuControlForButton;
+
         public MainForm(AuctioneerModel auctioneer)
         {
             InitializeComponent();
@@ -29,6 +31,14 @@ namespace User.Forms
             CenterLabel(LastName_label);
 
             Admin_Button.Visible = auctioneer.IsAdmin;
+
+            MenuControlForButton = new Dictionary<Button, UserControl>
+            {
+                // [Auction_button] = new AuctionControl(),
+                [Registration_button] = new AuctionRegistrationControl(),
+                // [Trader_button] = new TraderControl(),
+                [Admin_Button] = new AdminControl(),
+            };
         }
 
         private void CenterLabel(Label label)
@@ -87,14 +97,17 @@ namespace User.Forms
 
         private void MenuButton_Click(object sender, EventArgs e)
         {
-            // ToDo: სატესტოა და გასასწორებელი გაქვს!
-            LoadContentMenu(new AdminControl());
+            if (sender is Button button)
+            {
+                MenuControlForButton.TryGetValue(button, out UserControl selected);
+                LoadContentMenu(selected);
+            }
         }
 
         private void LoadContentMenu(UserControl userControl)
         {
             Content_panel.Controls.Clear();
-            Content_panel.Controls.Add(userControl);
+            if (userControl != null) Content_panel.Controls.Add(userControl);
         }
     }
 }

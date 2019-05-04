@@ -72,6 +72,12 @@
     <Compile Include="UserControls\AdminControl.Designer.cs">
       <DependentUpon>AdminControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\AuctionRegistrationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AuctionRegistrationControl.Designer.cs">
+      <DependentUpon>AuctionRegistrationControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\RegistrationControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\AdminControl.resx">
       <DependentUpon>AdminControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AuctionRegistrationControl.resx">
+      <DependentUpon>AuctionRegistrationControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\RegistrationControl.resx">
       <DependentUpon>RegistrationControl.cs</DependentUpon>

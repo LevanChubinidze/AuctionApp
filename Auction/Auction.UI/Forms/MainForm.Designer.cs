@@ -40,6 +40,7 @@
             this.User_pictureBox = new System.Windows.Forms.PictureBox();
             this.Content_panel = new System.Windows.Forms.Panel();
             this.MenuPanel_timer = new System.Windows.Forms.Timer(this.components);
+            this.Registration_button = new System.Windows.Forms.Button();
             Menu_button = new System.Windows.Forms.Button();
             this.Menu_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.User_pictureBox)).BeginInit();
@@ -65,6 +66,7 @@
             this.Menu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.Menu_panel.Controls.Add(this.Admin_Button);
             this.Menu_panel.Controls.Add(this.Trader_button);
+            this.Menu_panel.Controls.Add(this.Registration_button);
             this.Menu_panel.Controls.Add(this.Auction_button);
             this.Menu_panel.Controls.Add(Menu_button);
             this.Menu_panel.Controls.Add(this.LastName_label);
@@ -88,7 +90,7 @@
             this.Admin_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Admin_Button.Image = ((System.Drawing.Image)(resources.GetObject("Admin_Button.Image")));
             this.Admin_Button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Admin_Button.Location = new System.Drawing.Point(0, 401);
+            this.Admin_Button.Location = new System.Drawing.Point(0, 464);
             this.Admin_Button.Name = "Admin_Button";
             this.Admin_Button.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Admin_Button.Size = new System.Drawing.Size(220, 50);
@@ -110,7 +112,7 @@
             this.Trader_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Trader_button.Image = ((System.Drawing.Image)(resources.GetObject("Trader_button.Image")));
             this.Trader_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Trader_button.Location = new System.Drawing.Point(0, 338);
+            this.Trader_button.Location = new System.Drawing.Point(0, 401);
             this.Trader_button.Name = "Trader_button";
             this.Trader_button.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.Trader_button.Size = new System.Drawing.Size(220, 50);
@@ -151,7 +153,7 @@
             this.LastName_label.ForeColor = System.Drawing.Color.White;
             this.LastName_label.Location = new System.Drawing.Point(81, 202);
             this.LastName_label.Name = "LastName_label";
-            this.LastName_label.Size = new System.Drawing.Size(49, 22);
+            this.LastName_label.Size = new System.Drawing.Size(49, 23);
             this.LastName_label.TabIndex = 1;
             this.LastName_label.Text = "label1";
             // 
@@ -162,7 +164,7 @@
             this.FirstName_label.ForeColor = System.Drawing.Color.White;
             this.FirstName_label.Location = new System.Drawing.Point(81, 175);
             this.FirstName_label.Name = "FirstName_label";
-            this.FirstName_label.Size = new System.Drawing.Size(49, 22);
+            this.FirstName_label.Size = new System.Drawing.Size(49, 23);
             this.FirstName_label.TabIndex = 1;
             this.FirstName_label.Text = "label1";
             // 
@@ -188,6 +190,28 @@
             // 
             this.MenuPanel_timer.Interval = 10;
             this.MenuPanel_timer.Tick += new System.EventHandler(this.MenuPanel_timer_Tick);
+            // 
+            // Registration_button
+            // 
+            this.Registration_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
+            this.Registration_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Registration_button.FlatAppearance.BorderSize = 0;
+            this.Registration_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Registration_button.Font = new System.Drawing.Font("BPG Nino Mtavruli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Registration_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Registration_button.Image = ((System.Drawing.Image)(resources.GetObject("Registration_button.Image")));
+            this.Registration_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Registration_button.Location = new System.Drawing.Point(0, 338);
+            this.Registration_button.Name = "Registration_button";
+            this.Registration_button.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.Registration_button.Size = new System.Drawing.Size(220, 50);
+            this.Registration_button.TabIndex = 1;
+            this.Registration_button.Tag = "";
+            this.Registration_button.Text = "    რეგისტრაცია";
+            this.Registration_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Registration_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Registration_button.UseVisualStyleBackColor = false;
+            this.Registration_button.Click += new System.EventHandler(this.MenuButton_Click);
             // 
             // MainForm
             // 
@@ -217,5 +241,6 @@
         private System.Windows.Forms.Button Auction_button;
         private System.Windows.Forms.Button Trader_button;
         private System.Windows.Forms.Button Admin_Button;
+        private System.Windows.Forms.Button Registration_button;
     }
 }

@@ -160,6 +160,19 @@
         dZpLSUnxIpP5DyWL0V5nMdAuAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="Registration_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAuIAAALiAUm6+AQAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABe0lEQVRYR+2YvUoDQRRGF1sbtdHCQDSVWhi0s/MFRBCEdL6AVpaKj2Hh24hYKNqINir+NFroAwji
+        9dzJHQlBk92FnVlkDhySnZ3h+5gJIZssMQQRGcFFXMe2Xtut+FCmgRfYyyVO25R4UKKJD/iB+7iCe3Z9
+        jvF2knBfTtm1YQfXB91hWbahsBCs5R5dhS7vuGS39f6qGxXp2FA4CO0v59GSbZsTZwcJ/Kuc5w13MPxn
+        kLAZHFSul3ts2NLqIWwOXzQ5B9c4aUurh7B5rHW5V03OQSr3A2GpXCkIK1LuBmtdbsqWVg9hqVwpCEvl
+        SkFYkXK3GO7nO2GpXCkIS+VKQdgCpnKFIezflLvDWpcL9/SlEHjsoofzhLO2LAwEjuMnfuEgwpdTCN10
+        8SJbqE/2vxH+WD0EH6Hu4JjZXzJeOYVw/cvhzN7rcW+jP+5nDH+sHsJbrobIFZ6i7qSiryfYsqlxoEBH
+        2xj6xXuIGzhhU+JCkVFcw6YNJfKRZd9ohWIQDOEIDgAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="Auction_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAC

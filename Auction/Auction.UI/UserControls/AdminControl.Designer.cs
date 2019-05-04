@@ -39,6 +39,7 @@
             this.adminControlPages.Controls.Add(this.RegistrationPage);
             this.adminControlPages.Controls.Add(this.LotPage);
             this.adminControlPages.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.adminControlPages.Font = new System.Drawing.Font("BPG Nino Mtavruli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adminControlPages.Location = new System.Drawing.Point(0, 0);
             this.adminControlPages.Name = "adminControlPages";
             this.adminControlPages.SelectedIndex = 0;
@@ -48,10 +49,10 @@
             // RegistrationPage
             // 
             this.RegistrationPage.Font = new System.Drawing.Font("Sylfaen", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegistrationPage.Location = new System.Drawing.Point(4, 22);
+            this.RegistrationPage.Location = new System.Drawing.Point(4, 28);
             this.RegistrationPage.Name = "RegistrationPage";
             this.RegistrationPage.Padding = new System.Windows.Forms.Padding(3);
-            this.RegistrationPage.Size = new System.Drawing.Size(892, 597);
+            this.RegistrationPage.Size = new System.Drawing.Size(892, 591);
             this.RegistrationPage.TabIndex = 0;
             this.RegistrationPage.Text = "რეგისტრაცია";
             this.RegistrationPage.UseVisualStyleBackColor = true;
