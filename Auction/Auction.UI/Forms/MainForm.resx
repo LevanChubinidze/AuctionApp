@@ -162,15 +162,15 @@
   </data>
   <data name="Registration_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAuIAAALiAUm6+AQAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAABe0lEQVRYR+2YvUoDQRRGF1sbtdHCQDSVWhi0s/MFRBCEdL6AVpaKj2Hh24hYKNqINir+NFroAwji
-        9dzJHQlBk92FnVlkDhySnZ3h+5gJIZssMQQRGcFFXMe2Xtut+FCmgRfYyyVO25R4UKKJD/iB+7iCe3Z9
-        jvF2knBfTtm1YQfXB91hWbahsBCs5R5dhS7vuGS39f6qGxXp2FA4CO0v59GSbZsTZwcJ/Kuc5w13MPxn
-        kLAZHFSul3ts2NLqIWwOXzQ5B9c4aUurh7B5rHW5V03OQSr3A2GpXCkIK1LuBmtdbsqWVg9hqVwpCEvl
-        SkFYkXK3GO7nO2GpXCkIS+VKQdgCpnKFIezflLvDWpcL9/SlEHjsoofzhLO2LAwEjuMnfuEgwpdTCN10
-        8SJbqE/2vxH+WD0EH6Hu4JjZXzJeOYVw/cvhzN7rcW+jP+5nDH+sHsJbrobIFZ6i7qSiryfYsqlxoEBH
-        2xj6xXuIGzhhU+JCkVFcw6YNJfKRZd9ohWIQDOEIDgAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAC
+        4gAAAuIBSbr4BAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF7SURBVFhH7Zi9
+        SgNBFEYXWxu10cJANJVaGLSz8wVEEIR0voBWloqPYeHbiFgo2og2Kv40WugDCOL13MkdCUGT3YWdWWQO
+        HJKdneH7mAkhmywxBBEZwUVcx7Ze2634UKaBF9jLJU7blHhQookP+IH7uIJ7dn2O8XaScF9O2bVhB9cH
+        3WFZtqGwEKzlHl2FLu+4ZLf1/qobFenYUDgI7S/n0ZJtmxNnBwn8q5znDXcw/GeQsBkcVK6Xe2zY0uoh
+        bA5fNDkH1zhpS6uHsHmsdblXTc5BKvcDYalcKQgrUu4Ga11uypZWD2GpXCkIS+VKQViRcrcY7uc7Yalc
+        KQhL5UpB2AKmcoUh7N+Uu8Nalwv39KUQeOyih/OEs7YsDASO4yd+4SDCl1MI3XTxIluoT/a/Ef5YPQQf
+        oe7gmNlfMl45hXD9y+HM3utxb6M/7mcMf6wewluuhsgVnqLupKKvJ9iyqXGgQEfbGPrFe4gbOGFT4kKR
+        UVzDpg0l8pFl32iFYhAM4QgOAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="Auction_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

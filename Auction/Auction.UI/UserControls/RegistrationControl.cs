@@ -58,6 +58,7 @@ namespace Auction.UI.UserControls
             LastName_textBox.Text = selectedAuctioneer.LastName;
             UserName_textBox.Text = selectedAuctioneer.UserName;
             Password_textBox.Text = selectedAuctioneer.Password;
+            RepeatPassword_textBox.Text = selectedAuctioneer.Password;
         }
 
         private void Registration_button_Click(object sender, EventArgs e)
