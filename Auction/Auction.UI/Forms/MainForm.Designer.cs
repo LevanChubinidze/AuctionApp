@@ -86,7 +86,7 @@
             this.Admin_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Admin_Button.FlatAppearance.BorderSize = 0;
             this.Admin_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Admin_Button.Font = new System.Drawing.Font("BPG Nino Mtavruli", 15.75F);
+            this.Admin_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Admin_Button.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Admin_Button.Image = ((System.Drawing.Image)(resources.GetObject("Admin_Button.Image")));
             this.Admin_Button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -108,7 +108,7 @@
             this.Trader_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Trader_button.FlatAppearance.BorderSize = 0;
             this.Trader_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Trader_button.Font = new System.Drawing.Font("BPG Nino Mtavruli", 15.75F);
+            this.Trader_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Trader_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Trader_button.Image = ((System.Drawing.Image)(resources.GetObject("Trader_button.Image")));
             this.Trader_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -130,7 +130,7 @@
             this.Registration_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Registration_button.FlatAppearance.BorderSize = 0;
             this.Registration_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Registration_button.Font = new System.Drawing.Font("BPG Nino Mtavruli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Registration_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Registration_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Registration_button.Image = ((System.Drawing.Image)(resources.GetObject("Registration_button.Image")));
             this.Registration_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -152,7 +152,7 @@
             this.Auction_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Auction_button.FlatAppearance.BorderSize = 0;
             this.Auction_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Auction_button.Font = new System.Drawing.Font("BPG Nino Mtavruli", 15.75F);
+            this.Auction_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Auction_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Auction_button.Image = ((System.Drawing.Image)(resources.GetObject("Auction_button.Image")));
             this.Auction_button.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -171,22 +171,22 @@
             // LastName_label
             // 
             this.LastName_label.AutoSize = true;
-            this.LastName_label.Font = new System.Drawing.Font("BPG Nino Mtavruli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastName_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastName_label.ForeColor = System.Drawing.Color.White;
             this.LastName_label.Location = new System.Drawing.Point(81, 202);
             this.LastName_label.Name = "LastName_label";
-            this.LastName_label.Size = new System.Drawing.Size(49, 23);
+            this.LastName_label.Size = new System.Drawing.Size(60, 24);
             this.LastName_label.TabIndex = 1;
             this.LastName_label.Text = "label1";
             // 
             // FirstName_label
             // 
             this.FirstName_label.AutoSize = true;
-            this.FirstName_label.Font = new System.Drawing.Font("BPG Nino Mtavruli", 14.25F);
+            this.FirstName_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.FirstName_label.ForeColor = System.Drawing.Color.White;
             this.FirstName_label.Location = new System.Drawing.Point(81, 175);
             this.FirstName_label.Name = "FirstName_label";
-            this.FirstName_label.Size = new System.Drawing.Size(49, 23);
+            this.FirstName_label.Size = new System.Drawing.Size(60, 24);
             this.FirstName_label.TabIndex = 1;
             this.FirstName_label.Text = "label1";
             // 

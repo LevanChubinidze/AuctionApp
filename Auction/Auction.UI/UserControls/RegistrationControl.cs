@@ -26,7 +26,17 @@ namespace Auction.UI.UserControls
             {
                 _registrationMode = value;
                 UserName_textBox.Enabled = value;
-                Registration_button.Text = _registrationMode ? "რეგისტრაცია" : "რედაქტირება";
+
+                if (_registrationMode)
+                {
+                    Registration_button.Text = "რეგისტრაცია";
+                    Registration_button.BackColor = Color.FromArgb(10, 80, 150);
+                }
+                else
+                {
+                    Registration_button.Text = "რედაქტირება";
+                    Registration_button.BackColor = Color.FromArgb(150, 80, 10);
+                }
             }
         }
 

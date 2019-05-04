@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Auction.UI.UserControls
 {
-    public partial class AuctionRegistrationControl : UserControl
+    public partial class LotControl : UserControl
     {
-        public AuctionRegistrationControl()
+        public LotControl()
         {
             InitializeComponent();
-            traderRegistrationPage.Controls.Add(new TraderControl());
         }
     }
 }

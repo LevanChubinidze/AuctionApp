@@ -78,6 +78,12 @@
     <Compile Include="UserControls\AuctionRegistrationControl.Designer.cs">
       <DependentUpon>AuctionRegistrationControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\LotControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LotControl.Designer.cs">
+      <DependentUpon>LotControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\RegistrationControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AuctionRegistrationControl.resx">
       <DependentUpon>AuctionRegistrationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LotControl.resx">
+      <DependentUpon>LotControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\RegistrationControl.resx">
       <DependentUpon>RegistrationControl.cs</DependentUpon>

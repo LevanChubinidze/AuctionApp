@@ -36,10 +36,12 @@
             // 
             // AuctionsRegistrationPages
             // 
+            this.AuctionsRegistrationPages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.AuctionsRegistrationPages.Controls.Add(this.lotRegistrationPage);
             this.AuctionsRegistrationPages.Controls.Add(this.traderRegistrationPage);
-            this.AuctionsRegistrationPages.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AuctionsRegistrationPages.Font = new System.Drawing.Font("BPG Nino Mtavruli", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AuctionsRegistrationPages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AuctionsRegistrationPages.Location = new System.Drawing.Point(0, 0);
             this.AuctionsRegistrationPages.Name = "AuctionsRegistrationPages";
             this.AuctionsRegistrationPages.SelectedIndex = 0;
@@ -58,10 +60,11 @@
             // 
             // traderRegistrationPage
             // 
+            this.traderRegistrationPage.AutoScroll = true;
             this.traderRegistrationPage.Location = new System.Drawing.Point(4, 29);
             this.traderRegistrationPage.Name = "traderRegistrationPage";
             this.traderRegistrationPage.Padding = new System.Windows.Forms.Padding(3);
-            this.traderRegistrationPage.Size = new System.Drawing.Size(389, 233);
+            this.traderRegistrationPage.Size = new System.Drawing.Size(892, 590);
             this.traderRegistrationPage.TabIndex = 1;
             this.traderRegistrationPage.Text = "მოვაჭრის დამატება";
             this.traderRegistrationPage.UseVisualStyleBackColor = true;
@@ -78,9 +81,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl AuctionsRegistrationPages;
         private System.Windows.Forms.TabPage lotRegistrationPage;
         private System.Windows.Forms.TabPage traderRegistrationPage;
+        private System.Windows.Forms.TabControl AuctionsRegistrationPages;
     }
 }

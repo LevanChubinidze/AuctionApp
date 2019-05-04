@@ -73,7 +73,7 @@
             this.Name_textBox.Location = new System.Drawing.Point(58, 46);
             this.Name_textBox.Name = "Name_textBox";
             this.Name_textBox.Size = new System.Drawing.Size(337, 30);
-            this.Name_textBox.TabIndex = 15;
+            this.Name_textBox.TabIndex = 1;
             // 
             // LegacyForm_textBox
             // 
@@ -82,7 +82,7 @@
             this.LegacyForm_textBox.Location = new System.Drawing.Point(58, 100);
             this.LegacyForm_textBox.Name = "LegacyForm_textBox";
             this.LegacyForm_textBox.Size = new System.Drawing.Size(337, 30);
-            this.LegacyForm_textBox.TabIndex = 15;
+            this.LegacyForm_textBox.TabIndex = 2;
             // 
             // LegacyForm_label
             // 
@@ -102,7 +102,7 @@
             this.IdentityNumber_textBox.Location = new System.Drawing.Point(58, 154);
             this.IdentityNumber_textBox.Name = "IdentityNumber_textBox";
             this.IdentityNumber_textBox.Size = new System.Drawing.Size(337, 30);
-            this.IdentityNumber_textBox.TabIndex = 15;
+            this.IdentityNumber_textBox.TabIndex = 3;
             // 
             // IdentityNumber_label
             // 
@@ -122,7 +122,7 @@
             this.ApplicantName_textBox.Location = new System.Drawing.Point(58, 210);
             this.ApplicantName_textBox.Name = "ApplicantName_textBox";
             this.ApplicantName_textBox.Size = new System.Drawing.Size(337, 30);
-            this.ApplicantName_textBox.TabIndex = 15;
+            this.ApplicantName_textBox.TabIndex = 4;
             // 
             // ApplicantName_label
             // 
@@ -142,7 +142,7 @@
             this.ParticipantName_textBox.Location = new System.Drawing.Point(58, 267);
             this.ParticipantName_textBox.Name = "ParticipantName_textBox";
             this.ParticipantName_textBox.Size = new System.Drawing.Size(337, 30);
-            this.ParticipantName_textBox.TabIndex = 15;
+            this.ParticipantName_textBox.TabIndex = 5;
             // 
             // ParticipantName_label
             // 
@@ -162,7 +162,7 @@
             this.ParticipantStatus_textBox.Location = new System.Drawing.Point(497, 47);
             this.ParticipantStatus_textBox.Name = "ParticipantStatus_textBox";
             this.ParticipantStatus_textBox.Size = new System.Drawing.Size(337, 30);
-            this.ParticipantStatus_textBox.TabIndex = 15;
+            this.ParticipantStatus_textBox.TabIndex = 7;
             // 
             // ParticipantStatus_label
             // 
@@ -182,7 +182,7 @@
             this.PhoneNumber_textBox.Location = new System.Drawing.Point(497, 102);
             this.PhoneNumber_textBox.Name = "PhoneNumber_textBox";
             this.PhoneNumber_textBox.Size = new System.Drawing.Size(337, 30);
-            this.PhoneNumber_textBox.TabIndex = 15;
+            this.PhoneNumber_textBox.TabIndex = 8;
             // 
             // PhoneNumber_label
             // 
@@ -202,7 +202,7 @@
             this.Email_textBox.Location = new System.Drawing.Point(497, 157);
             this.Email_textBox.Name = "Email_textBox";
             this.Email_textBox.Size = new System.Drawing.Size(337, 30);
-            this.Email_textBox.TabIndex = 15;
+            this.Email_textBox.TabIndex = 9;
             // 
             // Email_label
             // 
@@ -222,7 +222,7 @@
             this.BankName_textBox.Location = new System.Drawing.Point(497, 212);
             this.BankName_textBox.Name = "BankName_textBox";
             this.BankName_textBox.Size = new System.Drawing.Size(337, 30);
-            this.BankName_textBox.TabIndex = 15;
+            this.BankName_textBox.TabIndex = 10;
             // 
             // BankName_label
             // 
@@ -242,7 +242,7 @@
             this.BankAccountNumber_textBox.Location = new System.Drawing.Point(497, 267);
             this.BankAccountNumber_textBox.Name = "BankAccountNumber_textBox";
             this.BankAccountNumber_textBox.Size = new System.Drawing.Size(337, 30);
-            this.BankAccountNumber_textBox.TabIndex = 15;
+            this.BankAccountNumber_textBox.TabIndex = 11;
             // 
             // BankAccountNumber_label
             // 
@@ -262,7 +262,7 @@
             this.Swift_textBox.Location = new System.Drawing.Point(497, 322);
             this.Swift_textBox.Name = "Swift_textBox";
             this.Swift_textBox.Size = new System.Drawing.Size(337, 30);
-            this.Swift_textBox.TabIndex = 15;
+            this.Swift_textBox.TabIndex = 12;
             // 
             // Swift_label
             // 
@@ -285,7 +285,7 @@
             this.Registration_button.Location = new System.Drawing.Point(21, 525);
             this.Registration_button.Name = "Registration_button";
             this.Registration_button.Size = new System.Drawing.Size(850, 43);
-            this.Registration_button.TabIndex = 17;
+            this.Registration_button.TabIndex = 13;
             this.Registration_button.Text = "რეგისტრაცია";
             this.Registration_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Registration_button.UseVisualStyleBackColor = false;
@@ -294,7 +294,7 @@
             // 
             this.monthCalendar1.Location = new System.Drawing.Point(62, 333);
             this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 18;
+            this.monthCalendar1.TabIndex = 6;
             // 
             // AuctionDate_label
             // 
@@ -309,8 +309,8 @@
             // 
             // TraderControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.Registration_button);
             this.Controls.Add(this.Swift_label);
@@ -336,6 +336,7 @@
             this.Controls.Add(this.IdentityNumber_textBox);
             this.Controls.Add(this.LegacyForm_textBox);
             this.Controls.Add(this.Name_textBox);
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "TraderControl";
             this.Size = new System.Drawing.Size(892, 597);
             this.ResumeLayout(false);
