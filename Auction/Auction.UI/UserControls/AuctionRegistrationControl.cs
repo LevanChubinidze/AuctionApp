@@ -16,6 +16,7 @@ namespace Auction.UI.UserControls
         {
             InitializeComponent();
             traderRegistrationPage.Controls.Add(new TraderControl());
+            lotRegistrationPage.Controls.Add(new LotControl());
         }
     }
 }

@@ -60,7 +60,7 @@
             this.Name_label.AutoSize = true;
             this.Name_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.Name_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.Name_label.Location = new System.Drawing.Point(58, 23);
+            this.Name_label.Location = new System.Drawing.Point(61, 19);
             this.Name_label.Name = "Name_label";
             this.Name_label.Size = new System.Drawing.Size(78, 23);
             this.Name_label.TabIndex = 16;
@@ -69,8 +69,9 @@
             // Name_textBox
             // 
             this.Name_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Name_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.Name_textBox.Location = new System.Drawing.Point(58, 46);
+            this.Name_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.Name_textBox.Location = new System.Drawing.Point(58, 43);
             this.Name_textBox.Name = "Name_textBox";
             this.Name_textBox.Size = new System.Drawing.Size(337, 30);
             this.Name_textBox.TabIndex = 1;
@@ -78,8 +79,9 @@
             // LegacyForm_textBox
             // 
             this.LegacyForm_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.LegacyForm_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.LegacyForm_textBox.Location = new System.Drawing.Point(58, 100);
+            this.LegacyForm_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LegacyForm_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.LegacyForm_textBox.Location = new System.Drawing.Point(58, 97);
             this.LegacyForm_textBox.Name = "LegacyForm_textBox";
             this.LegacyForm_textBox.Size = new System.Drawing.Size(337, 30);
             this.LegacyForm_textBox.TabIndex = 2;
@@ -89,7 +91,7 @@
             this.LegacyForm_label.AutoSize = true;
             this.LegacyForm_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.LegacyForm_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.LegacyForm_label.Location = new System.Drawing.Point(58, 76);
+            this.LegacyForm_label.Location = new System.Drawing.Point(61, 74);
             this.LegacyForm_label.Name = "LegacyForm_label";
             this.LegacyForm_label.Size = new System.Drawing.Size(195, 23);
             this.LegacyForm_label.TabIndex = 16;
@@ -98,8 +100,9 @@
             // IdentityNumber_textBox
             // 
             this.IdentityNumber_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.IdentityNumber_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.IdentityNumber_textBox.Location = new System.Drawing.Point(58, 154);
+            this.IdentityNumber_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdentityNumber_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.IdentityNumber_textBox.Location = new System.Drawing.Point(58, 151);
             this.IdentityNumber_textBox.Name = "IdentityNumber_textBox";
             this.IdentityNumber_textBox.Size = new System.Drawing.Size(337, 30);
             this.IdentityNumber_textBox.TabIndex = 3;
@@ -109,7 +112,7 @@
             this.IdentityNumber_label.AutoSize = true;
             this.IdentityNumber_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.IdentityNumber_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.IdentityNumber_label.Location = new System.Drawing.Point(58, 130);
+            this.IdentityNumber_label.Location = new System.Drawing.Point(61, 128);
             this.IdentityNumber_label.Name = "IdentityNumber_label";
             this.IdentityNumber_label.Size = new System.Drawing.Size(241, 23);
             this.IdentityNumber_label.TabIndex = 16;
@@ -118,8 +121,9 @@
             // ApplicantName_textBox
             // 
             this.ApplicantName_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.ApplicantName_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.ApplicantName_textBox.Location = new System.Drawing.Point(58, 210);
+            this.ApplicantName_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ApplicantName_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ApplicantName_textBox.Location = new System.Drawing.Point(58, 207);
             this.ApplicantName_textBox.Name = "ApplicantName_textBox";
             this.ApplicantName_textBox.Size = new System.Drawing.Size(337, 30);
             this.ApplicantName_textBox.TabIndex = 4;
@@ -129,7 +133,7 @@
             this.ApplicantName_label.AutoSize = true;
             this.ApplicantName_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.ApplicantName_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.ApplicantName_label.Location = new System.Drawing.Point(58, 184);
+            this.ApplicantName_label.Location = new System.Drawing.Point(61, 182);
             this.ApplicantName_label.Name = "ApplicantName_label";
             this.ApplicantName_label.Size = new System.Drawing.Size(304, 23);
             this.ApplicantName_label.TabIndex = 16;
@@ -138,8 +142,9 @@
             // ParticipantName_textBox
             // 
             this.ParticipantName_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.ParticipantName_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.ParticipantName_textBox.Location = new System.Drawing.Point(58, 267);
+            this.ParticipantName_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ParticipantName_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ParticipantName_textBox.Location = new System.Drawing.Point(58, 264);
             this.ParticipantName_textBox.Name = "ParticipantName_textBox";
             this.ParticipantName_textBox.Size = new System.Drawing.Size(337, 30);
             this.ParticipantName_textBox.TabIndex = 5;
@@ -149,7 +154,7 @@
             this.ParticipantName_label.AutoSize = true;
             this.ParticipantName_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.ParticipantName_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.ParticipantName_label.Location = new System.Drawing.Point(58, 240);
+            this.ParticipantName_label.Location = new System.Drawing.Point(61, 238);
             this.ParticipantName_label.Name = "ParticipantName_label";
             this.ParticipantName_label.Size = new System.Drawing.Size(293, 23);
             this.ParticipantName_label.TabIndex = 16;
@@ -158,8 +163,9 @@
             // ParticipantStatus_textBox
             // 
             this.ParticipantStatus_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.ParticipantStatus_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.ParticipantStatus_textBox.Location = new System.Drawing.Point(497, 47);
+            this.ParticipantStatus_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ParticipantStatus_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.ParticipantStatus_textBox.Location = new System.Drawing.Point(497, 44);
             this.ParticipantStatus_textBox.Name = "ParticipantStatus_textBox";
             this.ParticipantStatus_textBox.Size = new System.Drawing.Size(337, 30);
             this.ParticipantStatus_textBox.TabIndex = 7;
@@ -169,7 +175,7 @@
             this.ParticipantStatus_label.AutoSize = true;
             this.ParticipantStatus_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.ParticipantStatus_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.ParticipantStatus_label.Location = new System.Drawing.Point(497, 23);
+            this.ParticipantStatus_label.Location = new System.Drawing.Point(500, 19);
             this.ParticipantStatus_label.Name = "ParticipantStatus_label";
             this.ParticipantStatus_label.Size = new System.Drawing.Size(307, 23);
             this.ParticipantStatus_label.TabIndex = 16;
@@ -178,8 +184,9 @@
             // PhoneNumber_textBox
             // 
             this.PhoneNumber_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.PhoneNumber_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.PhoneNumber_textBox.Location = new System.Drawing.Point(497, 102);
+            this.PhoneNumber_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNumber_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.PhoneNumber_textBox.Location = new System.Drawing.Point(497, 99);
             this.PhoneNumber_textBox.Name = "PhoneNumber_textBox";
             this.PhoneNumber_textBox.Size = new System.Drawing.Size(337, 30);
             this.PhoneNumber_textBox.TabIndex = 8;
@@ -189,7 +196,7 @@
             this.PhoneNumber_label.AutoSize = true;
             this.PhoneNumber_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.PhoneNumber_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.PhoneNumber_label.Location = new System.Drawing.Point(497, 78);
+            this.PhoneNumber_label.Location = new System.Drawing.Point(500, 74);
             this.PhoneNumber_label.Name = "PhoneNumber_label";
             this.PhoneNumber_label.Size = new System.Drawing.Size(198, 23);
             this.PhoneNumber_label.TabIndex = 16;
@@ -198,8 +205,9 @@
             // Email_textBox
             // 
             this.Email_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Email_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.Email_textBox.Location = new System.Drawing.Point(497, 157);
+            this.Email_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.Email_textBox.Location = new System.Drawing.Point(497, 154);
             this.Email_textBox.Name = "Email_textBox";
             this.Email_textBox.Size = new System.Drawing.Size(337, 30);
             this.Email_textBox.TabIndex = 9;
@@ -209,7 +217,7 @@
             this.Email_label.AutoSize = true;
             this.Email_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.Email_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.Email_label.Location = new System.Drawing.Point(497, 133);
+            this.Email_label.Location = new System.Drawing.Point(500, 129);
             this.Email_label.Name = "Email_label";
             this.Email_label.Size = new System.Drawing.Size(107, 23);
             this.Email_label.TabIndex = 16;
@@ -218,8 +226,9 @@
             // BankName_textBox
             // 
             this.BankName_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.BankName_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.BankName_textBox.Location = new System.Drawing.Point(497, 212);
+            this.BankName_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BankName_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.BankName_textBox.Location = new System.Drawing.Point(497, 209);
             this.BankName_textBox.Name = "BankName_textBox";
             this.BankName_textBox.Size = new System.Drawing.Size(337, 30);
             this.BankName_textBox.TabIndex = 10;
@@ -229,7 +238,7 @@
             this.BankName_label.AutoSize = true;
             this.BankName_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.BankName_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.BankName_label.Location = new System.Drawing.Point(497, 188);
+            this.BankName_label.Location = new System.Drawing.Point(500, 184);
             this.BankName_label.Name = "BankName_label";
             this.BankName_label.Size = new System.Drawing.Size(293, 23);
             this.BankName_label.TabIndex = 16;
@@ -238,8 +247,9 @@
             // BankAccountNumber_textBox
             // 
             this.BankAccountNumber_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.BankAccountNumber_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.BankAccountNumber_textBox.Location = new System.Drawing.Point(497, 267);
+            this.BankAccountNumber_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BankAccountNumber_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.BankAccountNumber_textBox.Location = new System.Drawing.Point(497, 264);
             this.BankAccountNumber_textBox.Name = "BankAccountNumber_textBox";
             this.BankAccountNumber_textBox.Size = new System.Drawing.Size(337, 30);
             this.BankAccountNumber_textBox.TabIndex = 11;
@@ -249,7 +259,7 @@
             this.BankAccountNumber_label.AutoSize = true;
             this.BankAccountNumber_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.BankAccountNumber_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.BankAccountNumber_label.Location = new System.Drawing.Point(497, 243);
+            this.BankAccountNumber_label.Location = new System.Drawing.Point(500, 239);
             this.BankAccountNumber_label.Name = "BankAccountNumber_label";
             this.BankAccountNumber_label.Size = new System.Drawing.Size(255, 23);
             this.BankAccountNumber_label.TabIndex = 16;
@@ -258,8 +268,9 @@
             // Swift_textBox
             // 
             this.Swift_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Swift_textBox.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
-            this.Swift_textBox.Location = new System.Drawing.Point(497, 322);
+            this.Swift_textBox.Font = new System.Drawing.Font("Sylfaen", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Swift_textBox.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.Swift_textBox.Location = new System.Drawing.Point(497, 319);
             this.Swift_textBox.Name = "Swift_textBox";
             this.Swift_textBox.Size = new System.Drawing.Size(337, 30);
             this.Swift_textBox.TabIndex = 12;
@@ -269,7 +280,7 @@
             this.Swift_label.AutoSize = true;
             this.Swift_label.Font = new System.Drawing.Font("Sylfaen", 13F, System.Drawing.FontStyle.Bold);
             this.Swift_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
-            this.Swift_label.Location = new System.Drawing.Point(497, 298);
+            this.Swift_label.Location = new System.Drawing.Point(500, 294);
             this.Swift_label.Name = "Swift_label";
             this.Swift_label.Size = new System.Drawing.Size(126, 23);
             this.Swift_label.TabIndex = 16;
@@ -282,9 +293,9 @@
             this.Registration_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Registration_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Registration_button.ForeColor = System.Drawing.Color.White;
-            this.Registration_button.Location = new System.Drawing.Point(21, 525);
+            this.Registration_button.Location = new System.Drawing.Point(58, 520);
             this.Registration_button.Name = "Registration_button";
-            this.Registration_button.Size = new System.Drawing.Size(850, 43);
+            this.Registration_button.Size = new System.Drawing.Size(776, 43);
             this.Registration_button.TabIndex = 13;
             this.Registration_button.Text = "რეგისტრაცია";
             this.Registration_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -292,7 +303,7 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(62, 333);
+            this.monthCalendar1.Location = new System.Drawing.Point(59, 333);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 6;
             // 
@@ -310,7 +321,8 @@
             // TraderControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.AutoSize = true;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.Registration_button);
             this.Controls.Add(this.Swift_label);
@@ -338,7 +350,7 @@
             this.Controls.Add(this.Name_textBox);
             this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "TraderControl";
-            this.Size = new System.Drawing.Size(892, 597);
+            this.Size = new System.Drawing.Size(892, 590);
             this.ResumeLayout(false);
             this.PerformLayout();
 

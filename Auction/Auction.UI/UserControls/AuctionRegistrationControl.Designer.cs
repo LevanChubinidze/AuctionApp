@@ -36,11 +36,9 @@
             // 
             // AuctionsRegistrationPages
             // 
-            this.AuctionsRegistrationPages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.AuctionsRegistrationPages.Controls.Add(this.lotRegistrationPage);
             this.AuctionsRegistrationPages.Controls.Add(this.traderRegistrationPage);
+            this.AuctionsRegistrationPages.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AuctionsRegistrationPages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AuctionsRegistrationPages.Location = new System.Drawing.Point(0, 0);
             this.AuctionsRegistrationPages.Name = "AuctionsRegistrationPages";

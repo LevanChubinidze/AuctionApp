@@ -96,7 +96,7 @@
             this.Admin_Button.Size = new System.Drawing.Size(220, 50);
             this.Admin_Button.TabIndex = 3;
             this.Admin_Button.Tag = "";
-            this.Admin_Button.Text = "    ადმინი";
+            this.Admin_Button.Text = "  ადმინი";
             this.Admin_Button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Admin_Button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Admin_Button.UseVisualStyleBackColor = false;
@@ -118,7 +118,7 @@
             this.Trader_button.Size = new System.Drawing.Size(220, 50);
             this.Trader_button.TabIndex = 2;
             this.Trader_button.Tag = "";
-            this.Trader_button.Text = "    მონაწილე";
+            this.Trader_button.Text = "  მონაწილე";
             this.Trader_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Trader_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Trader_button.UseVisualStyleBackColor = false;
@@ -140,7 +140,7 @@
             this.Registration_button.Size = new System.Drawing.Size(220, 50);
             this.Registration_button.TabIndex = 1;
             this.Registration_button.Tag = "";
-            this.Registration_button.Text = "    რეგისტრაცია";
+            this.Registration_button.Text = "  რეგისტრაცია";
             this.Registration_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Registration_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Registration_button.UseVisualStyleBackColor = false;
@@ -162,7 +162,7 @@
             this.Auction_button.Size = new System.Drawing.Size(220, 50);
             this.Auction_button.TabIndex = 1;
             this.Auction_button.Tag = "";
-            this.Auction_button.Text = "    აუქციონი";
+            this.Auction_button.Text = "  აუქციონი";
             this.Auction_button.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Auction_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Auction_button.UseVisualStyleBackColor = false;
@@ -219,6 +219,7 @@
             this.ClientSize = new System.Drawing.Size(1120, 623);
             this.Controls.Add(this.Content_panel);
             this.Controls.Add(this.Menu_panel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
