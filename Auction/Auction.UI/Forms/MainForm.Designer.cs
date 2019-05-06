@@ -207,6 +207,7 @@
             this.Content_panel.Name = "Content_panel";
             this.Content_panel.Size = new System.Drawing.Size(900, 623);
             this.Content_panel.TabIndex = 1;
+            this.Content_panel.SizeChanged += new System.EventHandler(this.Content_panel_SizeChanged);
             // 
             // MenuPanel_timer
             // 

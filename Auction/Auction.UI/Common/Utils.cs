@@ -14,12 +14,12 @@ namespace User.Common
         {
             if (string.IsNullOrWhiteSpace(textbox.Text))
             {
-                label.ForeColor = Color.Maroon;
+                label.ForeColor = Color.FromArgb(140, 10, 10);
                 return false;
             }
             else
             {
-                label.ForeColor = Color.DarkBlue;
+                label.ForeColor = Color.FromArgb(10, 80, 150);
                 return true;
             }
         }

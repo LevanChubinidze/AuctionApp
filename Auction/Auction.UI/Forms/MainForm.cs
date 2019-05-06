@@ -17,7 +17,7 @@ namespace User.Forms
         bool Lessed = false;
         int MaxWidth = 220;
         int MinWidth = 65;
-        int StepSize = 5;
+        int StepSize = 155;
 
         Dictionary<Button, UserControl> MenuControlForButton;
 
@@ -108,6 +108,16 @@ namespace User.Forms
         {
             Content_panel.Controls.Clear();
             if (userControl != null) Content_panel.Controls.Add(userControl);
+        }
+
+        private void Content_panel_SizeChanged(object sender, EventArgs e)
+        {
+            if (Content_panel.Controls.Count > 0)
+            {
+                var cont = Content_panel.Controls[0];
+                cont.Width = Content_panel.Width;
+                cont.Height = Content_panel.Height;
+            }
         }
     }
 }

@@ -59,7 +59,7 @@
             this.Registration_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.Registration_button.FlatAppearance.BorderSize = 0;
             this.Registration_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Registration_button.Font = new System.Drawing.Font("BPG Nino Mtavruli", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Registration_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Registration_button.ForeColor = System.Drawing.Color.White;
             this.Registration_button.Location = new System.Drawing.Point(24, 519);
             this.Registration_button.Name = "Registration_button";
@@ -73,66 +73,66 @@
             // RepeatPassword_label
             // 
             this.RepeatPassword_label.AutoSize = true;
-            this.RepeatPassword_label.Font = new System.Drawing.Font("BPG Nino Mtavruli", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RepeatPassword_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RepeatPassword_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.RepeatPassword_label.Location = new System.Drawing.Point(24, 431);
             this.RepeatPassword_label.Name = "RepeatPassword_label";
-            this.RepeatPassword_label.Size = new System.Drawing.Size(231, 27);
+            this.RepeatPassword_label.Size = new System.Drawing.Size(244, 26);
             this.RepeatPassword_label.TabIndex = 9;
             this.RepeatPassword_label.Text = "გაიმეორეთ პაროლი";
             // 
             // Password_label
             // 
             this.Password_label.AutoSize = true;
-            this.Password_label.Font = new System.Drawing.Font("BPG Nino Mtavruli", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Password_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.Password_label.Location = new System.Drawing.Point(19, 354);
             this.Password_label.Name = "Password_label";
-            this.Password_label.Size = new System.Drawing.Size(102, 27);
+            this.Password_label.Size = new System.Drawing.Size(106, 26);
             this.Password_label.TabIndex = 10;
             this.Password_label.Text = "პაროლი";
             // 
             // UserName_label
             // 
             this.UserName_label.AutoSize = true;
-            this.UserName_label.Font = new System.Drawing.Font("BPG Nino Mtavruli", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserName_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserName_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.UserName_label.Location = new System.Drawing.Point(19, 278);
             this.UserName_label.Name = "UserName_label";
-            this.UserName_label.Size = new System.Drawing.Size(174, 27);
+            this.UserName_label.Size = new System.Drawing.Size(189, 26);
             this.UserName_label.TabIndex = 11;
             this.UserName_label.Text = "მომხმარებელი";
             // 
             // LastName_label
             // 
             this.LastName_label.AutoSize = true;
-            this.LastName_label.Font = new System.Drawing.Font("BPG Nino Mtavruli", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LastName_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastName_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.LastName_label.Location = new System.Drawing.Point(24, 201);
             this.LastName_label.Name = "LastName_label";
-            this.LastName_label.Size = new System.Drawing.Size(76, 27);
+            this.LastName_label.Size = new System.Drawing.Size(79, 26);
             this.LastName_label.TabIndex = 12;
             this.LastName_label.Text = "გვარი";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("BPG Nino Mtavruli", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.label6.Location = new System.Drawing.Point(19, 37);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(323, 27);
+            this.label6.Size = new System.Drawing.Size(356, 26);
             this.label6.TabIndex = 13;
             this.label6.Text = "მომხმარებლის რედაქტირება";
             // 
             // Name_label
             // 
             this.Name_label.AutoSize = true;
-            this.Name_label.Font = new System.Drawing.Font("BPG Nino Mtavruli", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(80)))), ((int)(((byte)(150)))));
             this.Name_label.Location = new System.Drawing.Point(24, 123);
             this.Name_label.Name = "Name_label";
-            this.Name_label.Size = new System.Drawing.Size(92, 27);
+            this.Name_label.Size = new System.Drawing.Size(100, 26);
             this.Name_label.TabIndex = 14;
             this.Name_label.Text = "სახელი";
             // 
@@ -145,6 +145,7 @@
             this.RepeatPassword_textBox.Size = new System.Drawing.Size(850, 30);
             this.RepeatPassword_textBox.TabIndex = 5;
             this.RepeatPassword_textBox.UseSystemPasswordChar = true;
+            this.RepeatPassword_textBox.TextChanged += new System.EventHandler(this.Name_textBox_TextChanged);
             // 
             // Password_textBox
             // 
@@ -155,6 +156,7 @@
             this.Password_textBox.Size = new System.Drawing.Size(850, 30);
             this.Password_textBox.TabIndex = 4;
             this.Password_textBox.UseSystemPasswordChar = true;
+            this.Password_textBox.TextChanged += new System.EventHandler(this.Name_textBox_TextChanged);
             // 
             // UserName_textBox
             // 
@@ -164,6 +166,7 @@
             this.UserName_textBox.Name = "UserName_textBox";
             this.UserName_textBox.Size = new System.Drawing.Size(850, 30);
             this.UserName_textBox.TabIndex = 3;
+            this.UserName_textBox.TextChanged += new System.EventHandler(this.Name_textBox_TextChanged);
             // 
             // LastName_textBox
             // 
@@ -173,6 +176,7 @@
             this.LastName_textBox.Name = "LastName_textBox";
             this.LastName_textBox.Size = new System.Drawing.Size(850, 30);
             this.LastName_textBox.TabIndex = 2;
+            this.LastName_textBox.TextChanged += new System.EventHandler(this.Name_textBox_TextChanged);
             // 
             // Name_textBox
             // 
@@ -182,6 +186,7 @@
             this.Name_textBox.Name = "Name_textBox";
             this.Name_textBox.Size = new System.Drawing.Size(850, 30);
             this.Name_textBox.TabIndex = 1;
+            this.Name_textBox.TextChanged += new System.EventHandler(this.Name_textBox_TextChanged);
             // 
             // RegistrationControl
             // 

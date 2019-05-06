@@ -18,7 +18,8 @@ namespace User
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm(new AuctioneerModel {
+            Application.Run(new MainForm(new AuctioneerModel
+            {
                 FirstName = "ლევან",
                 LastName = "ჩუბინიძე",
                 IsAdmin = true,
