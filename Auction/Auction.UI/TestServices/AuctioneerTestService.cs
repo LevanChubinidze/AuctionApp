@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Auction.UI.TestServices
 {
-    public class AuctioneerTestService : IAuctioneerService
+     public class AuctioneerTestService : IAuctioneerService
     {
         static List<AuctioneerModel> auctioneers = new List<AuctioneerModel>
         {
