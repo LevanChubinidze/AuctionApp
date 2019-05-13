@@ -15,7 +15,7 @@ namespace Auction.UI.TestServices
         {
             new LotModel
             {
-                ID = 1,
+                Id = 1,
                 Name = "ლოტი N1",
                 Description = "გაზის აუქციონი",
                 StartingPrice = 230,
@@ -23,7 +23,7 @@ namespace Auction.UI.TestServices
             },
             new LotModel
             {
-                ID = 2,
+                Id = 2,
                 Name = "ლოტი N2",
                 Description = "გაზის აუქციონი",
                 StartingPrice = 230,
@@ -31,7 +31,7 @@ namespace Auction.UI.TestServices
             },
               new LotModel
             {
-                ID = 3,
+                Id = 3,
                 Name = "ლოტი N3",
                 Description = "გაზის აუქციონი",
                 StartingPrice = 230,
@@ -40,7 +40,7 @@ namespace Auction.UI.TestServices
         };
         public LotModel AddLot(LotModel lot)
         {
-            if (lots.Any(a => a.ID == lot.ID) || lots.Any(a => a.Name == lot.Name) || lots.Any(a => a.AuctionDate == lot.AuctionDate))
+            if (lots.Any(a => a.Id == lot.Id) || lots.Any(a => a.Name == lot.Name) || lots.Any(a => a.AuctionDate == lot.AuctionDate))
                 return null;
             else
             {
@@ -51,7 +51,7 @@ namespace Auction.UI.TestServices
 
         public LotModel EditLot(LotModel lot)
         {
-            var Lot = lots.FirstOrDefault(a => a.ID == lot.ID);
+            var Lot = lots.FirstOrDefault(a => a.Id == lot.Id);
             Lot.Name = lot.Name;
             Lot.Description = lot.Description;
             Lot.Quantity = lot.Quantity;

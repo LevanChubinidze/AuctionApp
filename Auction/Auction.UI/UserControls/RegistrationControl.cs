@@ -62,9 +62,9 @@ namespace Auction.UI.UserControls
             PopulateData();
         }
 
-        private void PopulateData()
+        private async void PopulateData()
         {
-            auctioners = AuctioneerService.GetAuctioneers().ToList();
+            auctioners = (await AuctioneerService.GetAuctioneers()).ToList();
             auctioners.Insert(0, new AuctioneerModel());
 
             Users_comboBox.DataSource = auctioners;

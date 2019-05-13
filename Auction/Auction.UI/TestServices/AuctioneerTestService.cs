@@ -41,7 +41,7 @@ namespace Auction.UI.TestServices
               }
         };
 
-        public AuctioneerModel EditAuctioneer(AuctioneerModel auctioneerModel)
+        public async Task<AuctioneerModel> EditAuctioneer(AuctioneerModel auctioneerModel)
         {
             var auctioneer = auctioneers.FirstOrDefault(a => a.Id == auctioneerModel.Id);
             auctioneer.FirstName = auctioneerModel.FirstName;
@@ -51,17 +51,17 @@ namespace Auction.UI.TestServices
             return auctioneer;
         }
 
-        public IEnumerable<AuctioneerModel> GetAuctioneers()
+        public async Task<IEnumerable<AuctioneerModel>> GetAuctioneers()
         {
             return auctioneers;
         }
 
-        public AuctioneerModel LoginAuctioneer(AuctioneerModel auctioneerModel)
+        public async Task<AuctioneerModel> LoginAuctioneer(AuctioneerModel auctioneerModel)
         {
             throw new NotImplementedException();
         }
 
-        public AuctioneerModel RegisterAuctioneer(AuctioneerModel auctioneerModel)
+        public async Task<AuctioneerModel> RegisterAuctioneer(AuctioneerModel auctioneerModel)
         {
             if (auctioneers.Any(a => a.UserName == auctioneerModel.UserName))
                 return null;

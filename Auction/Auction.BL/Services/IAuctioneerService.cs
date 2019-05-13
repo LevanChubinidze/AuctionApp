@@ -9,9 +9,9 @@ namespace Auction.BL.Services
 {
     public interface IAuctioneerService
     {
-        AuctioneerModel RegisterAuctioneer(AuctioneerModel auctioneerModel);
-        AuctioneerModel LoginAuctioneer(AuctioneerModel auctioneerModel);
-        IEnumerable<AuctioneerModel> GetAuctioneers();
-        AuctioneerModel EditAuctioneer(AuctioneerModel auctioneerModel);
+        Task<AuctioneerModel> RegisterAuctioneer(AuctioneerModel auctioneerModel);
+        Task<AuctioneerModel> LoginAuctioneer(AuctioneerModel auctioneerModel);
+        Task<IEnumerable<AuctioneerModel>> GetAuctioneers();
+        Task<AuctioneerModel> EditAuctioneer(AuctioneerModel auctioneerModel);
     }
 }
