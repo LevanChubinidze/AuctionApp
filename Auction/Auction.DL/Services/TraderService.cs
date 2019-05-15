@@ -127,6 +127,11 @@ namespace Auction.DL.Services
 
         public async Task<IEnumerable<TraderModel>> GetTradersByNameAndDate(string name, DateTime start, DateTime end)
         {
+            if (name == null)
+            {
+                throw new ArgumentNullException(nameof(name));
+            }
+
             using (var db = new AuctionContext())
             {
                 var traders = db.Traders

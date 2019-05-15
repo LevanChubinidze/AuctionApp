@@ -9,10 +9,10 @@ namespace Auction.BL.Services
 {
     public interface ILotService
     {
-        IEnumerable<LotModel> GetLots();
-        IEnumerable<LotModel> GetLotByDate(DateTime start, DateTime end);
-        IEnumerable<LotModel> GetLotByNameAndDate(string name, DateTime start, DateTime end);
-        LotModel AddLot(LotModel lot);
-        LotModel EditLot(LotModel lot);
+        Task<IEnumerable<LotModel>> GetLots();
+        Task<IEnumerable<LotModel>> GetLotByDate(DateTime start, DateTime end);
+        Task<IEnumerable<LotModel>> GetLotByNameAndDate(string name, DateTime start, DateTime end);
+        Task<LotModel> AddLot(LotModel lot);
+        Task<LotModel> EditLot(LotModel lot);
     }
 }
