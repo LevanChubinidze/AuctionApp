@@ -4,7 +4,6 @@ using Auction.DL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Auction.DL.Services
@@ -63,7 +62,7 @@ namespace Auction.DL.Services
             using (var db = new AuctionContext())
             {
                 var found = db.Auctioneers.Any(a =>
-                     a.UserName.Equals(auctioneerModel.UserName, StringComparison.OrdinalIgnoreCase)
+                     a.UserName.Equals(auctioneerModel.UserName, StringComparison.CurrentCultureIgnoreCase)
                      && a.Password == auctioneerModel.Password);
                 return found ? auctioneerModel : null;
             }
@@ -79,22 +78,41 @@ namespace Auction.DL.Services
             using (var db = new AuctionContext())
             {
                 var found = db.Auctioneers.Any(a =>
-                     a.UserName.Equals(auctioneerModel.UserName, StringComparison.OrdinalIgnoreCase));
+                     a.UserName.Equals(auctioneerModel.UserName, StringComparison.CurrentCultureIgnoreCase));
                 if (found) return null;
-                else
+
+                Auctioneer auctioneer = new Auctioneer
                 {
-                    Auctioneer auctioneer = new Auctioneer
-                    {
-                        FirstName = auctioneerModel.FirstName,
-                        LastName = auctioneerModel.LastName,
-                        UserName = auctioneerModel.UserName,
-                        Password = auctioneerModel.Password,
-                        IsAdmin = auctioneerModel.IsAdmin,
-                    };
-                    db.Auctioneers.Add(auctioneer);
-                    auctioneerModel.Id = auctioneer.Id;
-                    return auctioneerModel;
-                }
+                    FirstName = auctioneerModel.FirstName,
+                    LastName = auctioneerModel.LastName,
+                    UserName = auctioneerModel.UserName,
+                    Password = auctioneerModel.Password,
+                    IsAdmin = auctioneerModel.IsAdmin,
+                };
+
+                db.Auctioneers.Add(auctioneer);
+                await db.SaveChangesAsync();
+
+                auctioneerModel.Id = auctioneer.Id;
+                return auctioneerModel;
+            }
+        }
+
+        public async Task<AuctioneerModel> RemoveAuctioneer(AuctioneerModel auctioneerModel)
+        {
+            if (auctioneerModel == null)
+            {
+                throw new ArgumentNullException(nameof(auctioneerModel));
+            }
+
+            using (var db = new AuctionContext())
+            {
+                var auctioneer = db.Auctioneers.FirstOrDefault(a => a.Id == auctioneerModel.Id || a.UserName.Equals(auctioneerModel.UserName, StringComparison.CurrentCultureIgnoreCase));
+                if (auctioneer == null) return null;
+
+                db.Auctioneers.Remove(auctioneer);
+                await db.SaveChangesAsync();
+                return auctioneerModel;
             }
         }
     }

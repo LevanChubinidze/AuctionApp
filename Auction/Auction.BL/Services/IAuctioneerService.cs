@@ -13,5 +13,6 @@ namespace Auction.BL.Services
         Task<AuctioneerModel> LoginAuctioneer(AuctioneerModel auctioneerModel);
         Task<IEnumerable<AuctioneerModel>> GetAuctioneers();
         Task<AuctioneerModel> EditAuctioneer(AuctioneerModel auctioneerModel);
+        Task<AuctioneerModel> RemoveAuctioneer(AuctioneerModel auctioneerModel);
     }
 }

@@ -71,5 +71,10 @@ namespace Auction.UI.TestServices
                 return auctioneerModel;
             }
         }
+
+        public Task<AuctioneerModel> RemoveAuctioneer(AuctioneerModel auctioneerModel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

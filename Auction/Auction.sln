@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auction.UI", "Auction.UI\Au
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auction.DL", "Auction.DL\Auction.DL.csproj", "{371F8F7B-2087-4CE4-BE63-8FC2393E6FBB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1A604845-27C3-4956-9E64-9D5752819338}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auction.DL.Tests", "Auction.DL.Tests\Auction.DL.Tests.csproj", "{FF1F2022-EEBB-476D-BAD2-9B61F7917A64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{371F8F7B-2087-4CE4-BE63-8FC2393E6FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{371F8F7B-2087-4CE4-BE63-8FC2393E6FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{371F8F7B-2087-4CE4-BE63-8FC2393E6FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1F2022-EEBB-476D-BAD2-9B61F7917A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1F2022-EEBB-476D-BAD2-9B61F7917A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1F2022-EEBB-476D-BAD2-9B61F7917A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1F2022-EEBB-476D-BAD2-9B61F7917A64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF1F2022-EEBB-476D-BAD2-9B61F7917A64} = {1A604845-27C3-4956-9E64-9D5752819338}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {26E3D3D9-21BC-4211-8849-B6264FC1D8BE}
