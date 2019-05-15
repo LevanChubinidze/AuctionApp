@@ -9,10 +9,10 @@ namespace Auction.BL.Services
 {
     public interface ITraderService
     {
-        IEnumerable<TraderModel> GetTraders();
-        IEnumerable<TraderModel> GetTradersByDate(DateTime start, DateTime end);
-        IEnumerable<TraderModel> GetTradersByModelAndDate(string name, DateTime start, DateTime end);
-        TraderModel AddTrader(TraderModel trader);
-        TraderModel EditTrader(TraderModel trader);
+        Task<IEnumerable<TraderModel>> GetTraders();
+        Task<IEnumerable<TraderModel>> GetTradersByDate(DateTime start, DateTime end);
+        Task<IEnumerable<TraderModel>> GetTradersByNameAndDate(string name, DateTime start, DateTime end);
+        Task<TraderModel> AddTrader(TraderModel trader);
+        Task<TraderModel> EditTrader(TraderModel trader);
     }
 }
