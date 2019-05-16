@@ -38,7 +38,8 @@ namespace Auction.UI.TestServices
                 MinimalBid = 2,
             }
         };
-        public LotModel AddLot(LotModel lot)
+
+        public async Task< LotModel> AddLot(LotModel lot)
         {
             if (lots.Any(a => a.Id == lot.Id) || lots.Any(a => a.Name == lot.Name) || lots.Any(a => a.AuctionDate == lot.AuctionDate))
                 return null;
@@ -48,8 +49,7 @@ namespace Auction.UI.TestServices
                 return lot;
             }
         }
-
-        public LotModel EditLot(LotModel lot)
+        public async Task< LotModel> EditLot(LotModel lot)
         {
             var Lot = lots.FirstOrDefault(a => a.Id == lot.Id);
             Lot.Name = lot.Name;
@@ -63,18 +63,15 @@ namespace Auction.UI.TestServices
 
             return Lot;
         }
-
-        public IEnumerable<LotModel> GetLotByDate(DateTime start, DateTime end)
+        public async Task< IEnumerable<LotModel>> GetLotByDate(DateTime start, DateTime end)
         {
             throw new NotImplementedException();
         }
-
-        public IEnumerable<LotModel> GetLotByNameAndDate(string name, DateTime start, DateTime end)
+        public async Task< IEnumerable<LotModel>> GetLotByNameAndDate(string name, DateTime start, DateTime end)
         {
             throw new NotImplementedException();
         }
-
-        public IEnumerable<LotModel> GetLots()
+        public async Task< IEnumerable<LotModel>> GetLots()
         {
             throw new NotImplementedException();
         }
