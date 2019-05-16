@@ -9,11 +9,11 @@ namespace Auction.BL.Services
 {
     public interface ITradingHistoryService
     {
-        IEnumerable<TradingHistoryModel> GetTradingHistory();
-        IEnumerable<TradingHistoryModel> GetTradingHistoryByLotId(int id);
-        IEnumerable<TradingHistoryModel> GetTradingHistoryByTraderId(int id);
-        IEnumerable<TradingHistoryModel> GetTradingHistoryByDate(DateTime start, DateTime end);
-        TradingHistoryModel AddTradingHistory(TradingHistoryModel tradingHistoryModel);
-        TradingHistoryModel EditTradingHistory(TradingHistoryModel tradingHistoryModel);
+        Task<IEnumerable<TradingHistoryModel>> GetTradingHistory();
+        Task<IEnumerable<TradingHistoryModel>> GetTradingHistoryByLotId(int id);
+        Task<IEnumerable<TradingHistoryModel>> GetTradingHistoryByTraderId(int id);
+        Task<IEnumerable<TradingHistoryModel>> GetTradingHistoryByDate(DateTime start, DateTime end);
+        Task<TradingHistoryModel> AddTradingHistory(TradingHistoryModel history);
+        Task<TradingHistoryModel> EditTradingHistory(TradingHistoryModel history);
     }
 }
