@@ -69,6 +69,8 @@
     <Compile Include="Models\TradingHistory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AuctioneerService.cs" />
+    <Compile Include="Services\LotService.cs" />
+    <Compile Include="Services\TraderService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
