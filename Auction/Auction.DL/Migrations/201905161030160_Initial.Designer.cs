@@ -13,7 +13,7 @@ namespace Auction.DL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201905132002592_Initial"; }
+            get { return "201905161030160_Initial"; }
         }
         
         string IMigrationMetadata.Source

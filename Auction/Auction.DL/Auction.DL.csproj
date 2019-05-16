@@ -58,9 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuctionContext.cs" />
-    <Compile Include="Migrations\201905132002592_Initial.cs" />
-    <Compile Include="Migrations\201905132002592_Initial.Designer.cs">
-      <DependentUpon>201905132002592_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201905161030160_Initial.cs" />
+    <Compile Include="Migrations\201905161030160_Initial.Designer.cs">
+      <DependentUpon>201905161030160_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Auctioneer.cs" />
@@ -75,15 +75,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905132002592_Initial.resx">
-      <DependentUpon>201905132002592_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Auction.BL\Auction.BL.csproj">
       <Project>{2EDFBDFA-33ED-46FE-97AD-0DBD0A2C8A70}</Project>
       <Name>Auction.BL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201905161030160_Initial.resx">
+      <DependentUpon>201905161030160_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

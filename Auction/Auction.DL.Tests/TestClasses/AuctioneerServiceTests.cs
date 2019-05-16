@@ -13,7 +13,8 @@ namespace Auction.DL.Tests.TestClasses
 
     public class AuctioneerServiceTests : BaseTest
     {
-        public AuctioneerServiceTests()
+        [SetUp]
+        public void SetUpMethod()
         {
             using (var db = new AuctionContext())
             {
