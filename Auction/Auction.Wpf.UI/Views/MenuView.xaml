@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="Auction.Wpf.UI.Views.MenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Auction.Wpf.UI.Views"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="220">
+
+    <UserControl.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="/Fonts/#BPG Nino Mtavruli"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames  Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                            Storyboard.TargetName="MenuGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="60" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="220" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames  Storyboard.TargetProperty="(FrameworkElement.Width)"
+                                            Storyboard.TargetName="MenuGrid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="220" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="60" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="OpenMenuButton">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+        </EventTrigger>
+
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="CloseMenuButton">
+            <BeginStoryboard Storyboard="{StaticResource CloseMenu}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+
+    <Grid Name="MenuGrid" Width="220" HorizontalAlignment="Left" Background="#22313f">
+        <StackPanel>
+            <!--sidebar user part-->
+            <Grid Height="150" Background="#22313f">
+                <Button  Name="CloseMenuButton" Width="60" Height="60" VerticalAlignment="Top" Background="{x:Null}"  BorderBrush="{x:Null}" HorizontalAlignment="Right" Click="CloseMenuButton_Click">
+                    <materialDesign:PackIcon Foreground="White" Kind="ArrowLeft" Width="25" Height="20" />
+                </Button>
+                <Button Name="OpenMenuButton" Width="60" Height="60" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Visibility="Collapsed" Click="OpenMenuButton_Click">
+                    <materialDesign:PackIcon Foreground="White" Kind="Menu" Width="30" Height="25"/>
+                </Button>
+            </Grid>
+
+            <!--sidebar Menu part-->
+            <ListView BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#22313f" Foreground="White">
+
+                <ListViewItem Name="Auction"  Height="60" >
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon  Kind="CourtHammer" Margin="10" VerticalAlignment="Center" Width="30" Height="30"/>
+                        <TextBlock Text="აუქციონი" VerticalAlignment="Center" Margin="20 10"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem Name="Analitics"  Height="60" >
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="ChartAreaspline" Margin="10" VerticalAlignment="Center" Width="30" Height="30"/>
+                        <TextBlock Text="ანალიტიკა" VerticalAlignment="Center" Margin="20 10"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem Name="Registration" Height="60" >
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Pencil" Margin="10" VerticalAlignment="Center"  Width="30" Height="30"/>
+                        <TextBlock Text="რეგისტრაცია" VerticalAlignment="Center" Margin="20 10"/>
+                    </StackPanel>
+                </ListViewItem>
+
+                <ListViewItem Name="Admin"  Height="60" >
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="ChessQueen" Margin="10" VerticalAlignment="Center"  Width="30" Height="30"/>
+                        <TextBlock Text="ადმინი" VerticalAlignment="Center" Margin="20 10"/>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+        </StackPanel>
+    </Grid>
+
+
+</UserControl>

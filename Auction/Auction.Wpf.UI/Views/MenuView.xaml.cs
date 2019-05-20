@@ -13,19 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Auction.Wpf.UI
+namespace Auction.Wpf.UI.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MenuView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MenuView : UserControl
     {
-        public MainWindow()
+        public MenuView()
         {
             InitializeComponent();
         }
 
-       
         private void CloseMenuButton_Click(object sender, RoutedEventArgs e)
         {
             CloseMenuButton.Visibility = Visibility.Collapsed;
@@ -37,26 +36,5 @@ namespace Auction.Wpf.UI
             CloseMenuButton.Visibility = Visibility.Visible;
             OpenMenuButton.Visibility = Visibility.Collapsed;
         }
-
-        private void TitleBar_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                this.DragMove();
-            }
-        }
-
-
-       
-
-        #region Helper Methods
-        private void AddControl(Control control)
-        {
-            contentGrid.Children.RemoveAt(0);
-            contentGrid.Children.Add(control);
-        }
-
-        #endregion
-    
     }
 }
