@@ -3,47 +3,67 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Auction.Wpf.UI.Windows"
+        xmlns:local="clr-namespace:Auction.Wpf.UI"
+        xmlns:Windows="clr-namespace:Auction.Wpf.UI.Windows"
         mc:Ignorable="d"
         Title="LoginWindow" Height="400" Width="350"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        >
     <Window.Resources>
+
+        <Style x:Key="{x:Type PasswordBox}" TargetType="{x:Type PasswordBox}">
+            <Setter Property="Windows:PasswordBoxMonitor.IsMonitoring"
+              Value="True"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type PasswordBox}">
+                        <Border Name="Bd"
+                                CornerRadius="2"
+                                Background="{TemplateBinding Background}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                SnapsToDevicePixels="true">
+                            <Grid>
+                                <ScrollViewer x:Name="PART_ContentHost" 
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                             <TextBlock Name="txtPrompt"
+                                        Visibility="Collapsed"
+                                        FontFamily="/Fonts/#BPG Nino Mtavruli" 
+                                        Text="პაროლი" 
+                                        VerticalAlignment="Center" 
+                                        HorizontalAlignment="Left" 
+                                        Margin="5,2,0,0" 
+                                        Foreground="DarkGray" 
+                               />
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled"
+                                         Value="false">
+                                <Setter TargetName="Bd"
+                                            Property="Background"
+                                            Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                                <Setter Property="Foreground"
+                                            Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="Windows:PasswordBoxMonitor.PasswordLength" Value="0">
+                                <Setter Property="Visibility" TargetName="txtPrompt" Value="Visible"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+
+
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontFamily" Value="/Fonts/#BPG Nino Mtavruli"/>
             <Setter Property="FontSize" Value="15"/>
         </Style>
-
-        <ControlTemplate x:Key="passwordbox" TargetType="{x:Type PasswordBox}">
-            <Border Background="{TemplateBinding Background}" 
-                    x:Name="Bd" BorderBrush="#FFE6DDDD"
-                    BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="2">
-                <Grid>
-                    <ScrollViewer Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
-                    <TextBlock Name="txtPrompt"
-                               FontFamily="/Fonts/#BPG Nino Mtavruli" 
-                               Text="პაროლი" 
-                               VerticalAlignment="Center" 
-                               HorizontalAlignment="Left" 
-                               Margin="5,2,0,0" 
-                               Foreground="DarkGray" />
-                </Grid>
-            </Border>
-            <ControlTemplate.Triggers>
-                <Trigger Property="IsEnabled" Value="False">
-                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
-                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
-                </Trigger>
-                <Trigger Property="Width" Value="Auto">
-                    <Setter Property="MinWidth" Value="100"/>
-                </Trigger>
-                <Trigger Property="Height" Value="Auto">
-                    <Setter Property="MinHeight" Value="20"/>
-                </Trigger>
-            </ControlTemplate.Triggers>
-        </ControlTemplate>
-
     </Window.Resources>
 
     <Grid Background="#22313f">
@@ -87,14 +107,14 @@
             </Grid>
             <Grid>
                 <PasswordBox Name="passwordBox"
-                        Template="{StaticResource passwordbox}"
+                             VerticalAlignment="Top"
                          Padding="1,7,0,0"
                          BorderThickness="0"
                          Foreground="#22313f"
                          Height="30"
                          Margin="10" 
-                         />
-               
+                         PasswordChanged="PasswordBox_PasswordChanged"
+                />
 
             </Grid>
             <Button Name="loginButton"
