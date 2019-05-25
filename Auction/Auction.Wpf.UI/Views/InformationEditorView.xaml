@@ -1,0 +1,79 @@
+﻿<UserControl x:Class="Auction.Wpf.UI.Views.InformationEditorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Auction.Wpf.UI.Views"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" MinWidth="7" />
+            <ColumnDefinition Width="Auto" MinWidth="170" />
+        </Grid.ColumnDefinitions>
+
+        <GridSplitter 
+            Grid.Row="0" 
+            Grid.Column="1" 
+            Grid.RowSpan="2" 
+            Width="3"
+            VerticalAlignment="Stretch" 
+            HorizontalAlignment="Center"
+            ShowsPreview="False"
+            />
+
+        <Grid 
+            Grid.Row="0" 
+            Grid.RowSpan="2" 
+            Grid.Column="2" 
+            Background="WhiteSmoke"
+            >
+            <Polygon 
+                Name="expandButton"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="1"
+                Points="0,0 -5,10, 0,20" 
+                Stroke="DarkGray" 
+                Visibility="Hidden"
+                Fill="DarkGray" />
+
+            <Polygon 
+                Name="collapseButton"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="1"
+                Points="0,0 5,10, 0,20" 
+                Stroke="DarkGray" 
+                Visibility="Visible"
+                Fill="DarkGray" />
+        </Grid>
+
+        <local:FilterView Visibility="Visible" Grid.Row="0" Grid.Column="3" Grid.RowSpan="2"/>
+
+        <materialDesign:Card Background="WhiteSmoke"
+            Grid.Row="0" 
+            Grid.Column="0"
+            Margin="3">
+            <local:TraderEditView  Visibility="Visible" />
+        </materialDesign:Card>
+
+        <materialDesign:Card 
+            Grid.Row="1" 
+            Grid.Column="0" 
+            VerticalAlignment="Stretch" 
+            Margin="3">
+            <DataGrid >
+
+            </DataGrid>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>
