@@ -12,7 +12,6 @@
         ResizeMode="NoResize"
         >
     <Window.Resources>
-
         <Style x:Key="{x:Type PasswordBox}" TargetType="{x:Type PasswordBox}">
             <Setter Property="Windows:PasswordBoxMonitor.IsMonitoring"
               Value="True"/>
@@ -28,7 +27,7 @@
                             <Grid>
                                 <ScrollViewer x:Name="PART_ContentHost" 
                                               SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
-                             <TextBlock Name="txtPrompt"
+                                <TextBlock Name="txtPrompt"
                                         Visibility="Collapsed"
                                         FontFamily="/Fonts/#BPG Nino Mtavruli" 
                                         Text="პაროლი" 
@@ -56,9 +55,6 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
-
-
 
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontFamily" Value="/Fonts/#BPG Nino Mtavruli"/>
