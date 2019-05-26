@@ -91,15 +91,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Utils\Extensions.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
     <Compile Include="Views\AdminView.xaml.cs">
       <DependentUpon>AdminView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\AuctioneerEditView.xaml.cs">
+      <DependentUpon>AuctioneerEditView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\FilterView.xaml.cs">
       <DependentUpon>FilterView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\HistoryEditView.xaml.cs">
+      <DependentUpon>HistoryEditView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\InformationEditorView.xaml.cs">
       <DependentUpon>InformationEditorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LotEditView.xaml.cs">
+      <DependentUpon>LotEditView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MenuView.xaml.cs">
       <DependentUpon>MenuView.xaml</DependentUpon>
@@ -108,11 +118,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\AuctioneerEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\FilterView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\HistoryEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\InformationEditorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LotEditView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -167,7 +189,10 @@
     </EmbeddedResource>
     <Resource Include="Fonts\bpg_nino_mtavruli_normal.ttf" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Auction.BL.Models.AuctioneerModel.datasource" />
+    <None Include="Properties\DataSources\Auction.BL.Models.LotModel.datasource" />
     <None Include="Properties\DataSources\Auction.BL.Models.TraderModel.datasource" />
+    <None Include="Properties\DataSources\Auction.BL.Models.TradingHistoryModel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -193,9 +218,7 @@
   <ItemGroup>
     <Resource Include="Icons\account.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utils\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Auction.BL\Auction.BL.csproj">
       <Project>{2edfbdfa-33ed-46fe-97ad-0dbd0a2c8a70}</Project>

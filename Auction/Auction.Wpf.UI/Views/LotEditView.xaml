@@ -1,0 +1,72 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Auction.Wpf.UI.Views"
+             xmlns:Models="clr-namespace:Auction.BL.Models;assembly=Auction.BL" x:Class="Auction.Wpf.UI.Views.LotEditView"
+             mc:Ignorable="d" 
+             >
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="FontFamily" Value="/Fonts/#BPG Nino Mtavruli"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+
+        <Grid  VerticalAlignment="Top" 
+               HorizontalAlignment="Left" 
+               DataContext="{Binding Lot}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Label VerticalAlignment="Center" Grid.Row="0" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="დასახელება:"/>
+            <TextBox x:Name="nameTextBox" MinWidth="120" VerticalAlignment="Center" Text="{Binding Name, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="0" Margin="3" Height="21" HorizontalAlignment="Left" Grid.Column="1"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="რაოდენობა:"/>
+            <TextBox x:Name="quantityTextBox" MinWidth="120" VerticalAlignment="Center" Text="{Binding Quantity, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="1" Margin="3" Height="21" HorizontalAlignment="Left" Grid.Column="1"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="2" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="განზომილება:"/>
+            <TextBox x:Name="unitTextBox" MinWidth="120" VerticalAlignment="Center" Text="{Binding Unit, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="2" Margin="3" Height="21" HorizontalAlignment="Left" Grid.Column="1"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="3" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="საწყისი ფასი:"/>
+            <TextBox x:Name="startingPriceTextBox" MinWidth="120" VerticalAlignment="Center" Text="{Binding StartingPrice, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="3" Margin="3" Height="21" HorizontalAlignment="Left" Grid.Column="1"/>
+
+            <!--Second Column-->
+            
+            <Label VerticalAlignment="Center" Grid.Row="0" Margin="3" HorizontalAlignment="Left" Grid.Column="2" Content="მიმდინარე ფასი:"/>
+            <TextBox x:Name="currentPriceTextBox" MinWidth="120" VerticalAlignment="Center" Text="{Binding CurrentPrice, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="0" Margin="3" Height="21" HorizontalAlignment="Left" Grid.Column="3"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="1" Margin="3" HorizontalAlignment="Left" Grid.Column="2" Content="მინიმალური ფსონი:"/>
+            <TextBox x:Name="minimalBidTextBox" MinWidth="120" VerticalAlignment="Center" Text="{Binding MinimalBid, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="1" Margin="3" Height="21" HorizontalAlignment="Left" Grid.Column="3"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="2" Margin="3" HorizontalAlignment="Left" Grid.Column="2" Content="ფსონების რაოდენობა:"/>
+            <TextBox x:Name="bidCountTextBox" MinWidth="120" VerticalAlignment="Center" Text="{Binding BidCount, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="2" Margin="3" Height="21" HorizontalAlignment="Left" Grid.Column="3"/>
+
+            <Label VerticalAlignment="Center" Grid.Row="3" Margin="3" HorizontalAlignment="Left" Grid.Column="2" Content="აუქციონის თარიღი:"/>
+            <DatePicker x:Name="auctionDateDatePicker" MinWidth="120" VerticalAlignment="Center" SelectedDate="{Binding AuctionDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="3" Margin="3" HorizontalAlignment="Left" Grid.Column="3"/>
+     
+            <Label VerticalAlignment="Center" Grid.Row="4" Margin="3" HorizontalAlignment="Left" Grid.Column="0" Content="აღწერა:"/>
+            <TextBox  x:Name="descriptionTextBox" MinLines="1" MaxLines="4" VerticalAlignment="Center" Text="{Binding Description, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="4" Margin="3" Height="21" HorizontalAlignment="Stretch" Grid.Column="1" Grid.ColumnSpan="3"/>
+            
+        </Grid>
+
+    </Grid>
+</UserControl>

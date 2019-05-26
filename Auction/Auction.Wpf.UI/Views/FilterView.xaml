@@ -15,7 +15,6 @@
             <Setter Property="FontFamily" Value="/Fonts/#BPG Nino Mtavruli"/>
             <Setter Property="FontSize" Value="12"/>
         </Style>
-        
     </UserControl.Resources>
     
     <StackPanel Margin="5">
