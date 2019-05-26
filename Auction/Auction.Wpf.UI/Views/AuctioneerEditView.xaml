@@ -7,7 +7,8 @@
              xmlns:Models="clr-namespace:Auction.BL.Models;assembly=Auction.BL" x:Class="Auction.Wpf.UI.Views.AuctioneerEditView"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
-            >
+             DataContext="{Binding AuctioneerEditViewModel}"        
+    >
     <UserControl.Resources>
         <Style TargetType="{x:Type Label}">
             <Setter Property="FontFamily" Value="/Fonts/#BPG Nino Mtavruli" />

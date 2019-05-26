@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:Auction.Wpf.UI.Views"
              xmlns:Models="clr-namespace:Auction.BL.Models;assembly=Auction.BL" x:Class="Auction.Wpf.UI.Views.HistoryEditView"
              mc:Ignorable="d" 
+             DataContext="{Binding HistoryEditViewModel}"
             >
     <UserControl.Resources>
         <Style TargetType="{x:Type Label}">

@@ -24,7 +24,7 @@ namespace Auction.Wpf.UI.Windows
         {
             InitializeComponent();
 
-            new LoginWindow().Show();
+           new LoginWindow().Show();
         }
 
        

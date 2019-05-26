@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:Auction.Wpf.UI.Views"
              xmlns:Models="clr-namespace:Auction.BL.Models;assembly=Auction.BL" x:Class="Auction.Wpf.UI.Views.LotEditView"
              mc:Ignorable="d" 
+             DataContext="{Binding LotEditViewModel}"
              >
     <UserControl.Resources>
         <Style TargetType="{x:Type Label}">

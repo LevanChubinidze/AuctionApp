@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 
 namespace Auction.Wpf.UI.Utils
 {
     public static class Extensions
     {
-        public static bool CanAppendWithDigit(this string textNumber, string digit)
+        public static bool CanAppendWithDigit(this string textNumber, string newSymbol)
         {
-            throw new NotImplementedException();
+            var decimalSeparator = CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
+            if (textNumber.Contains(decimalSeparator) && newSymbol == decimalSeparator) return false;
+            if (!char.IsDigit(char.Parse(newSymbol)) && newSymbol != decimalSeparator) return false;
+            return true;
         }
     }
 }

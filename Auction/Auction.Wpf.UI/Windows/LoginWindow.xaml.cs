@@ -1,4 +1,5 @@
-﻿using Auction.Wpf.UI.ViewModels;
+﻿using Auction.Wpf.UI.Utils;
+using Auction.Wpf.UI.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Unity;
 
 namespace Auction.Wpf.UI.Windows
 {
@@ -20,10 +22,11 @@ namespace Auction.Wpf.UI.Windows
     /// </summary>
     public partial class LoginWindow : Window
     {
+        private readonly LoginViewModel LoginViewModel;
 
         public LoginWindow()
         {
-
+            LoginViewModel = ServiceContainer.Instance.Services.Resolve<LoginViewModel>();
             InitializeComponent();
 
         }

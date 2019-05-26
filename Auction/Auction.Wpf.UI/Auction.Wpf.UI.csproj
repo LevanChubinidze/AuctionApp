@@ -91,8 +91,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Abstractions\BindableBase.cs" />
     <Compile Include="Utils\Extensions.cs" />
+    <Compile Include="Utils\ServiceContainer.cs" />
+    <Compile Include="ViewModels\AuctioneerEditViewModel.cs" />
+    <Compile Include="ViewModels\HistoryEditViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\LotEditViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
+    <Compile Include="ViewModels\TraderEditViewModel.cs" />
     <Compile Include="Views\AdminView.xaml.cs">
       <DependentUpon>AdminView.xaml</DependentUpon>
     </Compile>

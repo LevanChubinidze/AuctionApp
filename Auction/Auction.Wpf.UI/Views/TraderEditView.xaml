@@ -7,6 +7,7 @@
              xmlns:Models="clr-namespace:Auction.BL.Models;assembly=Auction.BL" 
              x:Class="Auction.Wpf.UI.Views.TraderEditView"
              mc:Ignorable="d" 
+             DataContext="{Binding TraderEditViewModel}"
              >
     <UserControl.Resources>
         <Style TargetType="{x:Type Label}">
