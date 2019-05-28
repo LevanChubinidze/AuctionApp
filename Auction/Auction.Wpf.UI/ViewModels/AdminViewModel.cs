@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Auction.Wpf.UI.ViewModels
 {
-    public class MenuViewModel : BindableBase
+    public class AdminViewModel : BindableBase
     {
-
     }
 }

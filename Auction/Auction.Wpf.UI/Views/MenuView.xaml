@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Auction.Wpf.UI.Views"
-            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="220">
 
@@ -45,8 +45,9 @@
         <StackPanel>
             <!--sidebar user part-->
             <Grid Height="150" Background="#22313f">
-                <Button  Name="CloseMenuButton" Width="60" Height="60" VerticalAlignment="Top" Background="{x:Null}"  BorderBrush="{x:Null}" HorizontalAlignment="Right" Click="CloseMenuButton_Click">
+                <Button Name="CloseMenuButton" Width="60" Height="60" VerticalAlignment="Top" Background="{x:Null}"  BorderBrush="{x:Null}" HorizontalAlignment="Right" Click="CloseMenuButton_Click">
                     <materialDesign:PackIcon Foreground="White" Kind="ArrowLeft" Width="25" Height="20" />
+                    
                 </Button>
                 <Button Name="OpenMenuButton" Width="60" Height="60" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Visibility="Collapsed" Click="OpenMenuButton_Click">
                     <materialDesign:PackIcon Foreground="White" Kind="Menu" Width="30" Height="25"/>
@@ -54,36 +55,36 @@
             </Grid>
 
             <!--sidebar Menu part-->
-            <ListView BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#22313f" Foreground="White">
+            <StackPanel  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#22313f">
 
-                <ListViewItem Name="Auction"  Height="60" >
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon  Kind="CourtHammer" Margin="10" VerticalAlignment="Center" Width="30" Height="30"/>
-                        <TextBlock Text="აუქციონი" VerticalAlignment="Center" Margin="20 10"/>
-                    </StackPanel>
-                </ListViewItem>
+                <Button  Name="Auction" BorderThickness="0" Height="60" Width="220"  Command="{Binding NavCommand}" CommandParameter="Auction" HorizontalAlignment="Stretch" Background="{x:Null}" Foreground="White">
+                    <StackPanel Height="60" Width="220" Orientation="Horizontal">
+                            <materialDesign:PackIcon  Kind="CourtHammer" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Height="30"/>
+                            <TextBlock Text="აუქციონი" VerticalAlignment="Center" Margin="20 10"/>
+                        </StackPanel>
+                    </Button>
 
-                <ListViewItem Name="Analitics"  Height="60" >
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="ChartAreaspline" Margin="10" VerticalAlignment="Center" Width="30" Height="30"/>
-                        <TextBlock Text="ანალიტიკა" VerticalAlignment="Center" Margin="20 10"/>
-                    </StackPanel>
-                </ListViewItem>
+                <Button Name="Analitics" BorderThickness="0" Height="60" Width="220"  Command="{Binding NavCommand}" CommandParameter="Analitics" HorizontalAlignment="Stretch" Background="{x:Null}" Foreground="White">
+                    <StackPanel Height="60" Width="220" Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="ChartAreaspline" Margin="10" VerticalAlignment="Center" Width="30" Height="30"/>
+                            <TextBlock Text="ანალიტიკა" VerticalAlignment="Center" Margin="20 10"/>
+                        </StackPanel>
+                    </Button>
 
-                <ListViewItem Name="Registration" Height="60" >
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Pencil" Margin="10" VerticalAlignment="Center"  Width="30" Height="30"/>
-                        <TextBlock Text="რეგისტრაცია" VerticalAlignment="Center" Margin="20 10"/>
-                    </StackPanel>
-                </ListViewItem>
+                <Button Name="Registration" BorderThickness="0" Height="60" Width="220"  Command="{Binding NavCommand}" CommandParameter="Registration" HorizontalAlignment="Stretch" Background="{x:Null}" Foreground="White">
+                    <StackPanel Height="60" Width="220" Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Pencil" Margin="10" VerticalAlignment="Center"  Width="30" Height="30"/>
+                            <TextBlock Text="რეგისტრაცია" VerticalAlignment="Center" Margin="20 10"/>
+                        </StackPanel>
+                    </Button>
 
-                <ListViewItem Name="Admin"  Height="60" >
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="ChessQueen" Margin="10" VerticalAlignment="Center"  Width="30" Height="30"/>
-                        <TextBlock Text="ადმინი" VerticalAlignment="Center" Margin="20 10"/>
-                    </StackPanel>
-                </ListViewItem>
-            </ListView>
+                <Button  Name="Admin" BorderThickness="0" Height="60" Width="220"  Command="{Binding NavCommand}" CommandParameter="Admin" HorizontalAlignment="Stretch" Background="{x:Null}" Foreground="White">
+                    <StackPanel Height="60" Width="220" Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="ChessQueen" Margin="10" VerticalAlignment="Center"  Width="30" Height="30"/>
+                            <TextBlock Text="ადმინი" VerticalAlignment="Center" Margin="20 10"/>
+                        </StackPanel>
+                    </Button>
+            </StackPanel>
         </StackPanel>
     </Grid>
 

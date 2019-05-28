@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Auction.Wpf.UI.Utils;
+using Auction.Wpf.UI.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Unity;
 
 namespace Auction.Wpf.UI.Windows
 {
@@ -20,14 +23,19 @@ namespace Auction.Wpf.UI.Windows
     /// </summary>
     public partial class MainWindow : Window
     {
+        public MainWindowViewModel mainWindowViewModel { get; set; } = ServiceContainer.Instance.Services.Resolve<MainWindowViewModel>();
+
         public MainWindow()
         {
             InitializeComponent();
 
-           new LoginWindow().Show();
+            this.DataContext = mainWindowViewModel;
+            menuView.DataContext = mainWindowViewModel;
+
+            // new LoginWindow().Show();
         }
 
-       
+
         private void CloseMenuButton_Click(object sender, RoutedEventArgs e)
         {
             //CloseMenuButton.Visibility = Visibility.Collapsed;
@@ -47,16 +55,6 @@ namespace Auction.Wpf.UI.Windows
                 this.DragMove();
             }
         }
-       
 
-        #region Helper Methods
-        private void AddControl(Control control)
-        {
-            contentGrid.Children.RemoveAt(0);
-            contentGrid.Children.Add(control);
-        }
-
-        #endregion
-    
     }
 }

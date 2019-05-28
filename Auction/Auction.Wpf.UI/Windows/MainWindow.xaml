@@ -5,14 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Auction.Wpf.UI.Windows"
         xmlns:views="clr-namespace:Auction.Wpf.UI.Views"
+        xmlns:viewModels="clr-namespace:Auction.Wpf.UI.ViewModels"
         mc:Ignorable="d"
-        Title="აუქციონი" FontFamily="/Fonts/#BPG Nino Mtavruli" Height="450" Width="800">
+        Title="აუქციონი" FontFamily="/Fonts/#BPG Nino Mtavruli" Height="450" Width="800"
+        DataContext="{Binding mainWindowViewModel}"
+        >
 
     <Window.Resources>
+        
         <Style TargetType="{x:Type TextBlock}">
             <Setter Property="FontFamily" Value="/Fonts/#BPG Nino Mtavruli"/>
             <Setter Property="FontSize" Value="15"/>
         </Style>
+
+        <DataTemplate DataType="{x:Type viewModels:MainWindowViewModel}" />
+
+        <DataTemplate DataType="{x:Type viewModels:AdminViewModel}">
+            <views:AdminView />
+        </DataTemplate>
+        
     </Window.Resources>
 
     <Grid>
@@ -26,9 +37,9 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <views:MenuView Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"/>
+        <views:MenuView x:Name="menuView"  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"/>
 
-        <Grid Name="contentGrid" Grid.Row="1" Grid.Column="1" />
+        <ContentControl Name="contentControl" Content="{Binding CurrentViewModel}" Grid.Row="1" Grid.Column="1" />
         
     </Grid>
 </Window>
