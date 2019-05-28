@@ -4,9 +4,26 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Auction.Wpf.UI.Views"
+             xmlns:views="clr-namespace:Auction.Wpf.UI.Views"
+             xmlns:viewModels="clr-namespace:Auction.Wpf.UI.ViewModels"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              MinHeight="450" MinWidth="820">
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type viewModels:LotEditViewModel}">
+            <views:LotEditView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:TraderEditViewModel}">
+            <views:TraderEditView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:AuctioneerEditViewModel}">
+            <views:AuctioneerEditView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:HistoryEditViewModel}">
+            <views:HistoryEditView />
+        </DataTemplate>
+    </UserControl.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -57,13 +74,15 @@
                 Fill="DarkGray" />
         </Grid>
 
-        <local:FilterView Visibility="Visible" Grid.Row="0" Grid.Column="3" Grid.RowSpan="2"/>
+        <local:FilterView Background="#22313f" VerticalAlignment="Stretch" Visibility="Visible" Grid.Row="0" Grid.Column="3" Grid.RowSpan="2"/>
 
         <materialDesign:Card Background="WhiteSmoke"
             Grid.Row="0" 
             Grid.Column="0"
             Margin="3">
-            <local:TraderEditView  Visibility="Visible" />
+
+            <ContentControl Content="{Binding CurrentViewModel}" />
+
         </materialDesign:Card>
 
         <materialDesign:Card 

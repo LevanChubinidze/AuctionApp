@@ -97,6 +97,7 @@
     <Compile Include="Utils\ServiceContainer.cs" />
     <Compile Include="ViewModels\AdminViewModel.cs" />
     <Compile Include="ViewModels\AuctioneerEditViewModel.cs" />
+    <Compile Include="ViewModels\InformationEditorViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\HistoryEditViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />

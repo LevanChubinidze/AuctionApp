@@ -15,61 +15,60 @@
     </UserControl.Resources>
     
     <Grid>
-        <Grid.RowDefinitions>
-        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition MaxWidth="180"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <!--Admin Menu-->
-        <ListView  
+        <StackPanel  
             Grid.Column="0" 
             Grid.Row="1" 
-            BorderThickness="0"
             ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
             HorizontalAlignment="Stretch" 
             VerticalAlignment="Stretch" 
             Background="#22313f" 
-            Foreground="White">
+            >
 
-            <ListViewItem Name="Lots"  Height="60" >
-                <StackPanel Orientation="Horizontal">
+            <Button CommandParameter="lots" Command="{Binding NavigationCommand}" Background="{x:Null}" Foreground="White" BorderThickness="0"  Name="Lots"  Height="60" >
+                <StackPanel Orientation="Horizontal" Width="180">
                     <materialDesign:PackIcon  Kind="CourtHammer" Margin="10" VerticalAlignment="Center" Width="30" Height="30"/>
                     <TextBlock Text="ლოტები" VerticalAlignment="Center" Margin="5 10"/>
                 </StackPanel>
-            </ListViewItem>
+            </Button>
 
-            <ListViewItem Name="Traders"  Height="60" >
-                <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="Money" Margin="10" VerticalAlignment="Center" Width="30" Height="30"/>
+            <Button CommandParameter="traiders" Command="{Binding NavigationCommand}" Background="{x:Null}"  Foreground="White" BorderThickness="0" Name="Traders" Width="180" Height="60" >
+                <StackPanel Width="180" Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="Money" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Height="30"/>
                     <TextBlock Text="მოვაჭრეები" VerticalAlignment="Center"  Margin="5 10"/>
                 </StackPanel>
-            </ListViewItem>
+            </Button>
 
-            <ListViewItem Name="Auctioneers" Height="60" >
-                <StackPanel Orientation="Horizontal">
+            <Button CommandParameter="auctioneers" Command="{Binding NavigationCommand}" Background="{x:Null}"  Foreground="White" BorderThickness="0"  Name="Auctioneers" Height="60" >
+                <StackPanel Width="180" Orientation="Horizontal">
                     <materialDesign:PackIcon Kind="People" Margin="10" VerticalAlignment="Center"  Width="30" Height="30"/>
                     <TextBlock Text="აუქციონისტები"  MaxWidth="100" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Margin="5 10"/>
                 </StackPanel>
-            </ListViewItem>
+            </Button>
 
-            <ListViewItem Name="AuctioneerRegistration" Height="60" >
-                <StackPanel Orientation="Horizontal">
+            <Button CommandParameter="registration" Command="{Binding NavigationCommand}" Background="{x:Null}"  Foreground="White" BorderThickness="0"  Name="AuctioneerRegistration" Height="60" >
+                <StackPanel Width="180" Orientation="Horizontal">
                     <materialDesign:PackIcon Kind="Pencil" Margin="10" VerticalAlignment="Center"  Width="30" Height="30"/>
                     <TextBlock Text="აუქციონისტის რეგისტრაცია"  MaxWidth="100" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Margin="5 10"/>
                 </StackPanel>
-            </ListViewItem>
+            </Button>
 
-            <ListViewItem Name="History"  Height="60" >
-                <StackPanel Orientation="Horizontal">
+            <Button CommandParameter="history" Command="{Binding NavigationCommand}" Background="{x:Null}"  Foreground="White" BorderThickness="0"  Name="History"  Height="60" >
+                <StackPanel Width="180" Orientation="Horizontal">
                     <materialDesign:PackIcon Kind="History" Margin="10" VerticalAlignment="Center"  Width="30" Height="30"/>
                     <TextBlock Text="ისტორია" VerticalAlignment="Center"  Margin="5 10"/>
                 </StackPanel>
-            </ListViewItem>
-        </ListView>
+            </Button>
+        </StackPanel>
 
-        
-        
+        <ContentControl Grid.Column="1">
+            <local:InformationEditorView x:Name="infoEditor" DataContext="{Binding InformationEditorViewModel}" />
+        </ContentControl>
+
     </Grid>
 </UserControl>
