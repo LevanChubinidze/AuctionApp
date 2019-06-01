@@ -24,5 +24,21 @@ namespace Auction.Wpf.UI.Views
         {
             InitializeComponent();
         }
+
+        private void Grid_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if(filterView.Visibility == Visibility.Collapsed)
+            {
+                filterView.Visibility = Visibility.Visible;
+                expandButton.Visibility = Visibility.Hidden;
+                collapseButton.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                filterView.Visibility = Visibility.Collapsed;
+                expandButton.Visibility = Visibility.Visible;
+                collapseButton.Visibility = Visibility.Hidden;
+            }
+        }
     }
 }

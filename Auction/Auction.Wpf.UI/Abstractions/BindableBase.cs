@@ -10,8 +10,8 @@ namespace Auction.Wpf.UI
 {
     public class BindableBase : INotifyPropertyChanged
     {
-        protected virtual void SetProperty<T>(ref T member, T val,
-            [CallerMemberName] string propertyName = null)
+
+        protected virtual void SetProperty<T>(ref T member, T val, [CallerMemberName] string propertyName = null)
         {
             if (object.Equals(member, val)) return;
 
@@ -25,5 +25,9 @@ namespace Auction.Wpf.UI
         }
 
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
+
+        protected bool visible = true;
+        public virtual bool Visible { get => visible; set => SetProperty(ref visible, value); }
+
     }
 }

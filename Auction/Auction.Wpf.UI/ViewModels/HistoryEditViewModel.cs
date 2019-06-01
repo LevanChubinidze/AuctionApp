@@ -14,6 +14,7 @@ namespace Auction.Wpf.UI.ViewModels
         public HistoryEditViewModel(ITradingHistoryService historyService)
         {
             this.historyService = historyService;
+            Visible = false;
         }
     }
 }

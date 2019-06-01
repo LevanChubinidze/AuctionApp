@@ -3,13 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              xmlns:local="clr-namespace:Auction.Wpf.UI.Views"
              xmlns:views="clr-namespace:Auction.Wpf.UI.Views"
              xmlns:viewModels="clr-namespace:Auction.Wpf.UI.ViewModels"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:utils="clr-namespace:Auction.Wpf.UI.Utils"
              mc:Ignorable="d" 
-             MinHeight="450" MinWidth="820">
+             MinHeight="450" >
     <UserControl.Resources>
+        <utils:NegatableBooleanToVisibilityConverter x:Key="visibilityToBoolConverter" />
+
         <DataTemplate DataType="{x:Type viewModels:LotEditViewModel}">
             <views:LotEditView />
         </DataTemplate>
@@ -23,7 +27,7 @@
             <views:HistoryEditView />
         </DataTemplate>
     </UserControl.Resources>
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -32,26 +36,17 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" MinWidth="7" />
-            <ColumnDefinition Width="Auto" MinWidth="170" />
+            <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
-
-        <GridSplitter 
-            Grid.Row="0" 
-            Grid.Column="1" 
-            Grid.RowSpan="2" 
-            Width="3"
-            VerticalAlignment="Stretch" 
-            HorizontalAlignment="Center"
-            ShowsPreview="False"
-            />
+       
 
         <Grid 
             Grid.Row="0" 
             Grid.RowSpan="2" 
-            Grid.Column="2" 
+            Grid.Column="1" 
             Background="WhiteSmoke"
+            PreviewMouseUp="Grid_PreviewMouseUp"
             >
             <Polygon 
                 Name="expandButton"
@@ -60,8 +55,12 @@
                 Margin="1"
                 Points="0,0 -5,10, 0,20" 
                 Stroke="DarkGray" 
-                Visibility="Hidden"
-                Fill="DarkGray" />
+                Fill="DarkGray" 
+                Visibility="Visible"
+                >
+           
+
+            </Polygon>
 
             <Polygon 
                 Name="collapseButton"
@@ -70,11 +69,21 @@
                 Margin="1"
                 Points="0,0 5,10, 0,20" 
                 Stroke="DarkGray" 
-                Visibility="Visible"
-                Fill="DarkGray" />
+                Fill="DarkGray" 
+                Visibility="Hidden"
+                >
+           
+            </Polygon>
         </Grid>
 
-        <local:FilterView Background="#22313f" VerticalAlignment="Stretch" Visibility="Visible" Grid.Row="0" Grid.Column="3" Grid.RowSpan="2"/>
+        <local:FilterView Visibility="Collapsed" 
+                          x:Name="filterView"
+                          Background="#22313f" 
+                          VerticalAlignment="Stretch"
+                          HorizontalAlignment="Stretch"
+                          Grid.Row="0" 
+                          Grid.Column="2" 
+                          Grid.RowSpan="2"/>
 
         <materialDesign:Card Background="WhiteSmoke"
             Grid.Row="0" 

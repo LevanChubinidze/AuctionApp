@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
 
-namespace Auction.Wpf.UI
+namespace Auction.Wpf.UI.Utils
 {
     public class RelayCommand : ICommand
     {

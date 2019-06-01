@@ -14,11 +14,9 @@
             <Setter Property="FontSize" Value="12"/>
         </Style>
     </UserControl.Resources>
-
-    <Grid>
-
+    
         <Grid  VerticalAlignment="Top" 
-               HorizontalAlignment="Left" 
+               HorizontalAlignment="Center" 
                DataContext="{Binding Lot}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -68,6 +66,5 @@
             <TextBox  x:Name="descriptionTextBox" MinLines="1" MaxLines="4" VerticalAlignment="Center" Text="{Binding Description, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Grid.Row="4" Margin="3" Height="21" HorizontalAlignment="Stretch" Grid.Column="1" Grid.ColumnSpan="3"/>
             
         </Grid>
-
-    </Grid>
+    
 </UserControl>

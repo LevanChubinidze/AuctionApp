@@ -24,5 +24,7 @@ namespace Auction.Wpf.UI.Views
         {
             InitializeComponent();
         }
+
+    
     }
 }

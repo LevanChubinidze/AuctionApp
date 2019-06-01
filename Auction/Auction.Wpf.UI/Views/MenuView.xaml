@@ -18,7 +18,7 @@
             <DoubleAnimationUsingKeyFrames  Storyboard.TargetProperty="(FrameworkElement.Width)"
                                             Storyboard.TargetName="MenuGrid">
                 <EasingDoubleKeyFrame KeyTime="0" Value="60" />
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="220" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="220" />
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
 
@@ -26,7 +26,7 @@
             <DoubleAnimationUsingKeyFrames  Storyboard.TargetProperty="(FrameworkElement.Width)"
                                             Storyboard.TargetName="MenuGrid">
                 <EasingDoubleKeyFrame KeyTime="0" Value="220" />
-                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="60" />
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="60" />
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </UserControl.Resources>
@@ -45,11 +45,11 @@
         <StackPanel>
             <!--sidebar user part-->
             <Grid Height="150" Background="#22313f">
-                <Button Name="CloseMenuButton" Width="60" Height="60" VerticalAlignment="Top" Background="{x:Null}"  BorderBrush="{x:Null}" HorizontalAlignment="Right" Click="CloseMenuButton_Click">
+                <Button Name="CloseMenuButton" Width="60" Height="60" VerticalAlignment="Top" Background="Transparent"  BorderBrush="{x:Null}" HorizontalAlignment="Right" Click="CloseMenuButton_Click">
                     <materialDesign:PackIcon Foreground="White" Kind="ArrowLeft" Width="25" Height="20" />
                     
                 </Button>
-                <Button Name="OpenMenuButton" Width="60" Height="60" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Right" Visibility="Collapsed" Click="OpenMenuButton_Click">
+                <Button Name="OpenMenuButton" Width="60" Height="60" VerticalAlignment="Top" Background="Transparent" BorderBrush="{x:Null}" HorizontalAlignment="Right" Visibility="Collapsed" Click="OpenMenuButton_Click">
                     <materialDesign:PackIcon Foreground="White" Kind="Menu" Width="30" Height="25"/>
                 </Button>
             </Grid>
