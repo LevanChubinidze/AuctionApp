@@ -14,7 +14,6 @@ namespace Auction.Wpf.UI.ViewModels
         public AuctioneerEditViewModel(IAuctioneerService auctioneerService)
         {
             this.auctioneerService = auctioneerService;
-            Visible = false;
         }
     }
 }

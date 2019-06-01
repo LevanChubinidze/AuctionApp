@@ -14,7 +14,6 @@ namespace Auction.Wpf.UI.ViewModels
         public LotEditViewModel(ILotService lotService)
         {
             this.lotService = lotService;
-            Visible = false;
         }
     }
 }
