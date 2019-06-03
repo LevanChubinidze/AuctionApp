@@ -93,7 +93,7 @@
             Grid.Column="0" 
             VerticalAlignment="Stretch" 
             Margin="3">
-            <DataGrid >
+            <DataGrid ItemsSource="{Binding CurrentViewModel.Data}">
 
             </DataGrid>
         </materialDesign:Card>

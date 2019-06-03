@@ -67,7 +67,7 @@
         </StackPanel>
 
         <ContentControl Grid.Column="1">
-            <local:InformationEditorView x:Name="infoEditor" DataContext="{Binding InformationEditorViewModel}" />
+            <local:InformationEditorView x:Name="infoEditor"  />
         </ContentControl>
 
     </Grid>

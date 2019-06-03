@@ -23,14 +23,11 @@ namespace Auction.Wpf.UI.Views
     /// </summary>
     public partial class LotEditView : UserControl
     {
-        private readonly object LotEditViewModel;
-
         public LotEditView()
         {
-            LotEditViewModel = ServiceContainer.Instance.Services.Resolve<LotEditViewModel>();
             InitializeComponent();
-        }
 
+        }
      
     }
 }

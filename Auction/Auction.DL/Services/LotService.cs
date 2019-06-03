@@ -133,21 +133,28 @@ namespace Auction.DL.Services
         {
             using (var db = new AuctionContext())
             {
-                var lots = db.Lots.Select(L => new LotModel
+                try
                 {
-                    Id = L.Id,
-                    Name = L.Name,
-                    Description = L.Description,
-                    Quantity = L.Quantity,
-                    Unit = L.Unit,
-                    StartingPrice = L.StartingPrice,
-                    CurrentPrice = L.CurrentPrice,
-                    MinimalBid = L.MinimalBid,
-                    BidCount = L.BidCount,
-                    AuctionDate = L.AuctionDate
-                }).ToList();
+                    var lots = db.Lots.Select(L => new LotModel
+                    {
+                        Id = L.Id,
+                        Name = L.Name,
+                        Description = L.Description,
+                        Quantity = L.Quantity,
+                        Unit = L.Unit,
+                        StartingPrice = L.StartingPrice,
+                        CurrentPrice = L.CurrentPrice,
+                        MinimalBid = L.MinimalBid,
+                        BidCount = L.BidCount,
+                        AuctionDate = L.AuctionDate
+                    }).ToList();
 
-                return lots;
+                    return lots;
+                }
+                catch (Exception)
+                {
+                    return new List<LotModel>();
+                }
             }
 
         }

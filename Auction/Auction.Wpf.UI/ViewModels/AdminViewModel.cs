@@ -12,11 +12,8 @@ namespace Auction.Wpf.UI.ViewModels
     {
         #region BackingFields
         private RelayCommand<string> _navigationCommand;
-        private InformationEditorViewModel _informationEditorViewModel;
 
         #endregion
-
-        readonly Dictionary<string, BindableBase> navigations;
 
         public RelayCommand<string> NavigationCommand
         {
@@ -25,31 +22,14 @@ namespace Auction.Wpf.UI.ViewModels
         }
 
 
-        public InformationEditorViewModel InformationEditorViewModel
-        {
-            get => _informationEditorViewModel;
-            set => SetProperty(ref _informationEditorViewModel, value);
-        }
-
         public AdminViewModel()
         {
-            InformationEditorViewModel = ServiceContainer.Instance.Services.Resolve<InformationEditorViewModel>();
-
             NavigationCommand = new RelayCommand<string>(OnNavigation);
-            navigations = new Dictionary<string, BindableBase>
-            {
-                ["lots"] = ServiceContainer.Instance.Services.Resolve<LotEditViewModel>(),
-                ["traiders"] = ServiceContainer.Instance.Services.Resolve<TraderEditViewModel>(),
-                ["auctioneers"] = ServiceContainer.Instance.Services.Resolve<AuctioneerEditViewModel>(),
-               // ["registration"] = ServiceContainer.Instance.Services.Resolve<>(),
-                ["history"] = ServiceContainer.Instance.Services.Resolve<HistoryEditViewModel>()
-            };
         }
 
-        private void OnNavigation(string destionation)
+        private void OnNavigation(string selectedMenuItem)
         {
-            if (navigations.ContainsKey(destionation))
-                InformationEditorViewModel.CurrentViewModel = navigations[destionation];
+            Messenger.Instance.Send(selectedMenuItem);
         }
     }
 }

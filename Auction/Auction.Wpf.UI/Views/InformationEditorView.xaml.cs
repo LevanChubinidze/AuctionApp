@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Auction.Wpf.UI.Utils;
+using Auction.Wpf.UI.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Unity;
 
 namespace Auction.Wpf.UI.Views
 {
@@ -20,9 +23,15 @@ namespace Auction.Wpf.UI.Views
     /// </summary>
     public partial class InformationEditorView : UserControl
     {
+        public InformationEditorViewModel InformationEditorViewModel { get; set; }
+
         public InformationEditorView()
         {
             InitializeComponent();
+
+            InformationEditorViewModel = ServiceContainer.Instance.Services.Resolve<InformationEditorViewModel>();
+
+            DataContext = InformationEditorViewModel;
         }
 
         private void Grid_PreviewMouseUp(object sender, MouseButtonEventArgs e)

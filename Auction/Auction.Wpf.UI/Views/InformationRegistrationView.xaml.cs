@@ -1,6 +1,4 @@
-﻿using Auction.Wpf.UI.Utils;
-using Auction.Wpf.UI.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,23 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Unity;
 
 namespace Auction.Wpf.UI.Views
 {
     /// <summary>
-    /// Interaction logic for AdminView.xaml
+    /// Interaction logic for InformationRegistrationView.xaml
     /// </summary>
-    public partial class AdminView : UserControl
+    public partial class InformationRegistrationView : UserControl
     {
-        public AdminViewModel AdminViewModel { get; set; } = ServiceContainer.Instance.Services.Resolve<AdminViewModel>();
-
-        public AdminView()
+        public InformationRegistrationView()
         {
             InitializeComponent();
-
-            DataContext = AdminViewModel;
-
         }
     }
 }
