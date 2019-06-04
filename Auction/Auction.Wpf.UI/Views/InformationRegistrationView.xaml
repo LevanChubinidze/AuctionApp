@@ -24,17 +24,16 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <materialDesign:Card Grid.Row="0" Margin="3" Background="WhiteSmoke">
+        <materialDesign:Card Grid.Row="0" Margin="3" Background="WhiteSmoke" VerticalAlignment="Stretch">
             <StackPanel Margin="3">
                 <views:LotEditView x:Name="lotEditView" Margin="3"/>
                 <Button MinHeight="40">ლოტის რეგისტრაცია</Button>
             </StackPanel>
         </materialDesign:Card>
 
-        <materialDesign:Card Grid.Row="1"  Margin="3" Background="WhiteSmoke">
+        <materialDesign:Card Grid.Row="1"  Margin="3" Background="WhiteSmoke" VerticalAlignment="Stretch">
             <StackPanel  Margin="3">
                 <views:TraderEditView x:Name="traderEditView" Margin="3"/>
                 <Button MinHeight="40">მონაწილის რეგისტრაცია</Button>

@@ -33,6 +33,8 @@ namespace Auction.Wpf.UI.ViewModels
         {
             navigations = new Dictionary<string, BindableBase>();
             navigations["Admin"] = ServiceContainer.Instance.Services.Resolve<AdminViewModel>();
+            navigations["Registration"] = ServiceContainer.Instance.Services.Resolve<InformationRegistrationViewModel>();
+
             NavCommand = new RelayCommand<string>(OnNavigation);
         }
 

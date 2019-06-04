@@ -23,7 +23,12 @@
         <DataTemplate DataType="{x:Type viewModels:AdminViewModel}">
             <views:AdminView />
         </DataTemplate>
-        
+
+        <DataTemplate DataType="{x:Type viewModels:InformationRegistrationViewModel}">
+            <views:InformationRegistrationView />
+        </DataTemplate>
+
+
     </Window.Resources>
 
     <Grid>

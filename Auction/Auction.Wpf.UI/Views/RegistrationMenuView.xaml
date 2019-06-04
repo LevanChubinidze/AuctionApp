@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Auction.Wpf.UI.Views.RegistrationMenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Auction.Wpf.UI.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel VerticalAlignment="Center">
+      
+        <materialDesign:Card  
+            Background="#A55200"
+            Margin="15"
+            MinHeight="200"
+            MinWidth="300"
+            >
+            <Button Foreground="WhiteSmoke"  Background="#A55200">
+                <StackPanel Orientation="Horizontal" >
+                    <materialDesign:PackIcon Kind="CourtHammer"  VerticalAlignment="Center" Width="75" Height="75" Margin="20" />
+                    <TextBlock  VerticalAlignment="Center" FontFamily="/Fonts/#BPG Nino Mtavruli" FontSize="40" Padding="0,5,0,0" Text="ლოტის რეგისტრაცია" />
+                </StackPanel>
+                
+            </Button>
+        </materialDesign:Card>
+
+        <materialDesign:Card 
+             Background="#4E7566"
+            Margin="15"
+            MinHeight="200"
+            MinWidth="300"
+            >
+            <Button  Foreground="WhiteSmoke"  Background="#4E7566" >
+                <StackPanel Orientation="Horizontal" >
+                    <materialDesign:PackIcon Kind="People"  VerticalAlignment="Center" Width="75" Height="75" Margin="20" />
+                    <TextBlock  VerticalAlignment="Center" FontFamily="/Fonts/#BPG Nino Mtavruli" FontSize="40" Padding="0,5,0,0" Text="მონაწილის რეგისტრაცია" />
+                </StackPanel>
+            </Button>
+        </materialDesign:Card>
+
+    </StackPanel>
+</UserControl>

@@ -62,9 +62,11 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Expression.Interaction.3.0.40218.0\lib\net46\System.Windows.Interactivity.dll</HintPath>
     </Reference>
@@ -114,22 +116,33 @@
     <Compile Include="Utils\Extensions.cs" />
     <Compile Include="Utils\ServiceContainer.cs" />
     <Compile Include="ViewModels\AdminViewModel.cs" />
+    <Compile Include="ViewModels\AuctioneerDataGridViewModel.cs" />
     <Compile Include="ViewModels\AuctioneerEditViewModel.cs" />
     <Compile Include="ViewModels\FilterViewModel.cs" />
+    <Compile Include="ViewModels\HistoryDataGridViewModel.cs" />
     <Compile Include="ViewModels\InformationEditorViewModel.cs" />
+    <Compile Include="ViewModels\InformationRegistrationViewModel.cs" />
+    <Compile Include="ViewModels\LotDataGridViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\HistoryEditViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\LotEditViewModel.cs" />
+    <Compile Include="ViewModels\TraderDataGridViewModel.cs" />
     <Compile Include="ViewModels\TraderEditViewModel.cs" />
     <Compile Include="Views\AdminView.xaml.cs">
       <DependentUpon>AdminView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AuctioneerDataGridView.xaml.cs">
+      <DependentUpon>AuctioneerDataGridView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\AuctioneerEditView.xaml.cs">
       <DependentUpon>AuctioneerEditView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\FilterView.xaml.cs">
       <DependentUpon>FilterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HistoryDataGridView.xaml.cs">
+      <DependentUpon>HistoryDataGridView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\HistoryEditView.xaml.cs">
       <DependentUpon>HistoryEditView.xaml</DependentUpon>
@@ -139,6 +152,9 @@
     </Compile>
     <Compile Include="Views\InformationRegistrationView.xaml.cs">
       <DependentUpon>InformationRegistrationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LotDataGridView.xaml.cs">
+      <DependentUpon>LotDataGridView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LotEditView.xaml.cs">
       <DependentUpon>LotEditView.xaml</DependentUpon>
@@ -150,11 +166,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\AuctioneerDataGridView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\AuctioneerEditView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\FilterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HistoryDataGridView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -170,7 +194,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\LotDataGridView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\LotEditView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RegistrationMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TraderDataGridView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -189,6 +225,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\RegistrationMenuView.xaml.cs">
+      <DependentUpon>RegistrationMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TraderDataGridView.xaml.cs">
+      <DependentUpon>TraderDataGridView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TraderEditView.xaml.cs">
       <DependentUpon>TraderEditView.xaml</DependentUpon>
